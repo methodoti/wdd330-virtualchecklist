@@ -31,7 +31,64 @@
   </head>
   <body>
     <header id="main-header"></header>
-    <main><h1>checklist</h1></main>
+    <main class="home-page">
+      <div class="hero">
+        <picture>
+          <source srcset="images/hero-large.webp" media="(min-width: 768px)" />
+          <source srcset="images/hero-medium.webp" media="(min-width: 480px)" />
+          <img
+            src="images/hero-small.webp"
+            alt="Porto Alegre Skyline"
+            width="480"
+            height="240"
+          />
+        </picture>
+        <a href="./checklist.html" class="cta buttons buttonsRounded"
+          >Start a Flight!</a
+        >
+      </div>
+      <!-- <div class="div-events-weather-forecast"> -->
+      <h1>Home</h1>
+
+      <div class="welcomeLastflight">
+        <!-- WELCOME SECTION -->
+        <section class="welcomeSection">
+          <h2 class="cardTitle">Welcome</h2>
+          <div class="welcomeDiv cards">
+            <p>Welcome to the Virtual Checklist pilot!</p>
+            <p>Take your seat on the cockpit and have a good flight!</p>
+          </div>
+        </section>
+        <!-- LASTFLIGHT SECTION -->
+        <section class="lastflightSection">
+          <h2 class="cardTitle">Last Flight</h2>
+          <div class="lastflightDiv cards">
+            <div id="lasflight-img" class="lastflightImg"><div></div></div>
+            <div class="lastflightAircraft">
+              <p class="lastflightP">
+                Aircraft: <span id="last-aircraft">ATR 72-600</span>
+              </p>
+              <p>Date: <span id="last-date">Apr 7 2026</span></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- CHOOSE SECTION -->
+      <div class="choose">
+        <h2 class="cardTitle">Choose your Next Flight</h2>
+        <div id="choose-div" class="chooseDiv cards">
+          <!-- "aircraftId": "atr-72-600" -->
+          <!-- <div class="buttons"><p>Test ATR 72-600</p></div> -->
+          <!-- <div class="buttons"><p>Boeing 737-800</p></div>
+                        <div class="buttons"><p>ATR 72-600</p></div>
+                        <div class="buttons"><p>Boeing 737-800</p></div>
+                        <div class="buttons"><p>ATR 72-600</p></div>
+                        <div class="buttons"><p>Boeing 737-800</p></div>
+                        <div class="buttons"><p>ATR 72-600</p></div>
+                        <div class="buttons"><p>Boeing 737-800</p></div> -->
+        </div>
+      </div>
+    </main>
     <footer id="main-footer"></footer>
   </body>
 </html>
