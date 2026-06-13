@@ -7,31 +7,63 @@
         {
           "categoryName": "Pre-Flight Checklist",
           "items": [
-            { "type": "checkpoint", "task": "BATTERY", "action": "GUARD CLOSED" },
+            {
+              "type": "checkpoint",
+              "task": "BATTERY",
+              "action": "GUARD CLOSED"
+            },
             { "type": "checkpoint", "task": "APU", "action": "START" },
             { "type": "checkpoint", "task": "FUEL PUMPS FWD", "action": "ON" },
             { "type": "checkpoint", "task": "APU GEN", "action": "ON" },
-            { "type": "checkpoint", "task": "CABIN LIGHTS", "action": "AS REQUIRED" },
-            { "type": "checkpoint", "task": "IRS MODE SELECTORS", "action": "NAV" },
-            { "type": "checkpoint", "task": "DSPL SELECTOR", "action": "HDG/STS" },
-            { "type": "checkpoint", "task": "FUEL AND PAYLOAD", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "CABIN LIGHTS",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "IRS MODE SELECTORS",
+              "action": "NAV"
+            },
+            {
+              "type": "checkpoint",
+              "task": "DSPL SELECTOR",
+              "action": "HDG/STS"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL AND PAYLOAD",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "JETWAY", "action": "CALL" },
             { "type": "checkpoint", "task": "DOORS", "action": "OPEN" },
             { "type": "checkpoint", "task": "YAW DAMPER", "action": "ON" },
-            { "type": "checkpoint", "task": "EMERGENCY EXIT LIGHTS", "action": "GUARD CLOSED" },
+            {
+              "type": "checkpoint",
+              "task": "EMERGENCY EXIT LIGHTS",
+              "action": "GUARD CLOSED"
+            },
             { "type": "checkpoint", "task": "NO SMOKING", "action": "ON" },
             { "type": "checkpoint", "task": "WINDOW HEAT", "action": "ON" },
             { "type": "checkpoint", "task": "PACKS L AND R", "action": "AUTO" },
             { "type": "checkpoint", "task": "APU BLEED", "action": "ON" },
             { "type": "checkpoint", "task": "PRESSURIZATION", "action": "SET" },
             { "type": "checkpoint", "task": "LOGO LIGHT", "action": "ON" },
-            { "type": "checkpoint", "task": "POSITION LIGHT", "action": "STEADY" }
+            {
+              "type": "checkpoint",
+              "task": "POSITION LIGHT",
+              "action": "STEADY"
+            }
           ]
         },
         {
           "categoryName": "FMC Configuration",
           "items": [
-            { "type": "checkpoint", "task": "EFB: DATA FROM SIMBRIEF", "action": "REQUEST" },
+            {
+              "type": "checkpoint",
+              "task": "EFB: DATA FROM SIMBRIEF",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "POS INIT>", "action": "SET" },
             { "type": "checkpoint", "task": "RTE PAGE 1/2", "action": "SET" },
             { "type": "info", "task": "ORIGIN AND DEST", "action": "SET" },
@@ -41,37 +73,105 @@
             { "type": "checkpoint", "task": "RTE PAGE 2/2", "action": "SET" },
             { "type": "checkpoint", "task": "DEP/ARR", "action": "SET" },
             { "type": "checkpoint", "task": "LEGS", "action": "ROUTE CHECK" },
-            { "type": "checkpoint", "task": "EFB: TAKEOFF PERFORM", "action": "CALCULATE" },
-            { "type": "checkpoint", "task": "RTE/ PERF INIT>", "action": "<del>REQUEST</del>/SET" },
-            { "type": "checkpoint", "task": "PERF INIT/ N1 LIMIT>", "action": "SET" },
-            { "type": "checkpoint", "task": "RTE/ TAKEOFF REF", "action": "SET" },
-            { "type": "checkpoint", "task": "DES > FORECAST", "action": "REQUEST/SET" },
-            { "type": "atc", "task": "ATC CLEARANCE (IFR)", "action": "REQUEST" }
+            {
+              "type": "checkpoint",
+              "task": "EFB: TAKEOFF PERFORM",
+              "action": "CALCULATE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "RTE/ PERF INIT>",
+              "action": "<del>REQUEST</del>/SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PERF INIT/ N1 LIMIT>",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "RTE/ TAKEOFF REF",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "DES > FORECAST",
+              "action": "REQUEST/SET"
+            },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (IFR)",
+              "action": "REQUEST"
+            }
           ]
         },
         {
           "categoryName": "EFIS/MCP Configuration",
           "items": [
-            { "type": "checkpoint", "task": "EFIS: QNH (ALTIMETER)", "action": "SET" },
-            { "type": "checkpoint", "task": "EFIS: TRAFFIC - TFC", "action": "ON" },
-            { "type": "checkpoint", "task": "EFIS: ARPT BUTTON", "action": "ON" },
-            { "type": "checkpoint", "task": "MCP: FLIGHT DIRECTORS L AND R", "action": "ON" },
-            { "type": "checkpoint", "task": "MCP: AUTOTHROTTLE", "action": "ARM" },
-            { "type": "checkpoint", "task": "MCP: IAS/MACH SPEED", "action": "SET V2" },
+            {
+              "type": "checkpoint",
+              "task": "EFIS: QNH (ALTIMETER)",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFIS: TRAFFIC - TFC",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFIS: ARPT BUTTON",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: FLIGHT DIRECTORS L AND R",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: AUTOTHROTTLE",
+              "action": "ARM"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: IAS/MACH SPEED",
+              "action": "SET V2"
+            },
             { "type": "checkpoint", "task": "MCP: VNAV/LNAV", "action": "ON" },
-            { "type": "checkpoint", "task": "MCP: HDG/TAKEOFF RWY", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "MCP: HDG/TAKEOFF RWY",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "MCP: COURSE", "action": "SET" },
-            { "type": "checkpoint", "task": "MCP: FLIGHT ALTITUDE", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "MCP: FLIGHT ALTITUDE",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "RTO" }
           ]
         },
         {
           "categoryName": "Pedestal Configuration",
           "items": [
-            { "type": "checkpoint", "task": "<del>COM RADIOS</del>", "action": "SET" },
-            { "type": "checkpoint", "task": "<del>FLIGHT-PLAN CLEARANCE</del>", "action": "REQUEST" },
+            {
+              "type": "checkpoint",
+              "task": "<del>COM RADIOS</del>",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "<del>FLIGHT-PLAN CLEARANCE</del>",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "STBY" },
-            { "type": "checkpoint", "task": "<del>FLT DK DOOR</del>", "action": "CLOSED/DENY" }
+            {
+              "type": "checkpoint",
+              "task": "<del>FLT DK DOOR</del>",
+              "action": "CLOSED/DENY"
+            }
           ]
         },
         {
@@ -79,9 +179,21 @@
           "items": [
             { "type": "checkpoint", "task": "DOORS", "action": "CLOSED" },
             { "type": "checkpoint", "task": "JETWAY", "action": "RELEASE" },
-            { "type": "checkpoint", "task": "WHEEL CHOCKS", "action": "REMOVED" },
-            { "type": "checkpoint", "task": "<del>SMARTCARS</del>", "action": "START" },
-            { "type": "checkpoint", "task": "ANTI COLISION LIGHT", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "WHEEL CHOCKS",
+              "action": "REMOVED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "<del>SMARTCARS</del>",
+              "action": "START"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ANTI COLISION LIGHT",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "FUEL PUMPS", "action": "ON" },
             { "type": "checkpoint", "task": "FASTEN BELTS", "action": "ON" },
             { "type": "checkpoint", "task": "HYD PUMPS", "action": "ON" }
@@ -92,55 +204,135 @@
           "items": [
             { "type": "checkpoint", "task": "PUSHBACK", "action": "START" },
             { "type": "checkpoint", "task": "PACKS L AND R", "action": "OFF" },
-            { "type": "checkpoint", "task": "ENGINE 2 START SWITCH", "action": "GND" },
-            { "type": "checkpoint", "task": "ENGINE 2 FUEL CONTROL LEVER", "action": "RUN" },
-            { "type": "checkpoint", "task": "ENGINE 1 START SWITCH", "action": "GND" },
-            { "type": "checkpoint", "task": "ENGINE 1 FUEL CONTROL LEVER", "action": "RUN" }
+            {
+              "type": "checkpoint",
+              "task": "ENGINE 2 START SWITCH",
+              "action": "GND"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE 2 FUEL CONTROL LEVER",
+              "action": "RUN"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE 1 START SWITCH",
+              "action": "GND"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE 1 FUEL CONTROL LEVER",
+              "action": "RUN"
+            }
           ]
         },
         {
           "categoryName": "After Start Checklist",
           "items": [
-            { "type": "checkpoint", "task": "GENERATORS 1 & 2", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "GENERATORS 1 & 2",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "PROBE HEAT", "action": "ON" },
             { "type": "checkpoint", "task": "PACKS L AND R", "action": "AUTO" },
-            { "type": "checkpoint", "task": "ISOLATION VALVE", "action": "AUTO" },
+            {
+              "type": "checkpoint",
+              "task": "ISOLATION VALVE",
+              "action": "AUTO"
+            },
             { "type": "checkpoint", "task": "APU BLEED", "action": "OFF" },
             { "type": "checkpoint", "task": "APU", "action": "OFF" },
-            { "type": "checkpoint", "task": "ENG START SWITCHES", "action": "CONT" },
+            {
+              "type": "checkpoint",
+              "task": "ENG START SWITCHES",
+              "action": "CONT"
+            },
             { "type": "checkpoint", "task": "FLAPS", "action": "SET" },
-            { "type": "checkpoint", "task": "ELEVATOR TRIM", "action": "SET FOR TAKE-OFF" },
+            {
+              "type": "checkpoint",
+              "task": "ELEVATOR TRIM",
+              "action": "SET FOR TAKE-OFF"
+            },
             { "type": "checkpoint", "task": "RECALL", "action": "CHECK" },
-            { "type": "checkpoint", "task": "LOWER DISPLAY UNIT (DU)", "action": "OFF" },
-            { "type": "atc", "task": "ATC CLEARANCE (TAXI)", "action": "REQUEST" },
+            {
+              "type": "checkpoint",
+              "task": "LOWER DISPLAY UNIT (DU)",
+              "action": "OFF"
+            },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (TAXI)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "TAXI LIGHTS", "action": "ON" },
-            { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "AS REQUIRED" }
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY LIGHTS",
+              "action": "AS REQUIRED"
+            }
           ]
         },
         {
           "categoryName": "Before Take-off Checklist",
           "items": [
-            { "type": "atc", "task": "ATC CLEARANCE (DEPART)", "action": "REQUEST" },
-            { "type": "checkpoint", "task": "POSITION LIGHT", "action": "STROBE & STEADY" },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (DEPART)",
+              "action": "REQUEST"
+            },
+            {
+              "type": "checkpoint",
+              "task": "POSITION LIGHT",
+              "action": "STROBE & STEADY"
+            },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "TA/RA" },
-            { "type": "checkpoint", "task": "CABIN LIGHTS", "action": "AS REQUIRED" },
+            {
+              "type": "checkpoint",
+              "task": "CABIN LIGHTS",
+              "action": "AS REQUIRED"
+            },
             { "type": "checkpoint", "task": "CLOCK", "action": "AS REQUIRED" }
           ]
         },
         {
           "categoryName": "After Take-off Checklist",
           "items": [
-            { "type": "checkpoint", "task": "POSITIVE RATE OF CLIMB", "action": "GEAR UP" },
+            {
+              "type": "checkpoint",
+              "task": "POSITIVE RATE OF CLIMB",
+              "action": "GEAR UP"
+            },
             { "type": "checkpoint", "task": "CMD", "action": "ENGAGE" },
             { "type": "checkpoint", "task": "FLAPS", "action": "RETRACTED" },
-            { "type": "checkpoint", "task": "ENG START SWITCHES", "action": "OFF" },
-            { "type": "checkpoint", "task": "PRESSURIZATION", "action": "CHECK" },
-            { "type": "checkpoint", "task": "GEAR LEVER", "action": "OFF POSITION" },
+            {
+              "type": "checkpoint",
+              "task": "ENG START SWITCHES",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PRESSURIZATION",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "GEAR LEVER",
+              "action": "OFF POSITION"
+            },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "OFF" },
-            { "type": "checkpoint", "task": "CABIN LIGHTS", "action": "AS REQUIRED" },
+            {
+              "type": "checkpoint",
+              "task": "CABIN LIGHTS",
+              "action": "AS REQUIRED"
+            },
             { "type": "subtitle", "text": "Passing TA (Transition-Altitude)" },
-            { "type": "checkpoint", "task": "ALTIMETER", "action": "SET STD (29.92/1013)" },
+            {
+              "type": "checkpoint",
+              "task": "ALTIMETER",
+              "action": "SET STD (29.92/1013)"
+            },
             { "type": "subtitle", "text": "Passing 10,000 Feet" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "OFF" },
             { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "OFF" },
@@ -152,29 +344,53 @@
         {
           "categoryName": "Cruise Checklist",
           "items": [
-            { "type": "checkpoint", "task": "<del>AIRPORT INFORMATION</del>", "action": "<del>CHECK</del>" },
+            {
+              "type": "checkpoint",
+              "task": "<del>AIRPORT INFORMATION</del>",
+              "action": "<del>CHECK</del>"
+            },
             { "type": "checkpoint", "task": "MCP: ALTITUDE", "action": "RESET" }
           ]
         },
         {
           "categoryName": "Descent Checklist",
           "items": [
-            { "type": "checkpoint", "task": "ALTIMETER", "action": "SET/STANDBY" },
+            {
+              "type": "checkpoint",
+              "task": "ALTIMETER",
+              "action": "SET/STANDBY"
+            },
             { "type": "checkpoint", "task": "FMC: ROUTE", "action": "CHECK" },
-            { "type": "checkpoint", "task": "EFB: LANDING PERFORMANCE", "action": "CHECK" },
-            { "type": "checkpoint", "task": "FMC: APPR SPEED REF", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "EFB: LANDING PERFORMANCE",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FMC: APPR SPEED REF",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "LOCALIZER FREQ", "action": "SET" },
             { "type": "checkpoint", "task": "ILS LOC COURSE", "action": "SET" },
             { "type": "checkpoint", "task": "BARO MIN", "action": "SET" },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "SET" },
             { "type": "subtitle", "text": "Below 10,000 ft (MAX. 250 KIAS)" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "ON" },
-            { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "AS REQUIRED" },
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY LIGHTS",
+              "action": "AS REQUIRED"
+            },
             { "type": "checkpoint", "task": "TAXI LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "LOGO LIGHT", "action": "ON" },
             { "type": "checkpoint", "task": "FASTEN BELTS", "action": "ON" },
             { "type": "subtitle", "text": "Passing TA (Transition-Altitude)" },
-            { "type": "checkpoint", "task": "ALTIMETER", "action": "RESET TO LOCAL" }
+            {
+              "type": "checkpoint",
+              "task": "ALTIMETER",
+              "action": "RESET TO LOCAL"
+            }
           ]
         },
         {
@@ -186,12 +402,28 @@
             { "type": "checkpoint", "task": "LANDING GEAR", "action": "DOWN" },
             { "type": "info", "task": "BEFORE FAF", "action": "FLAPS 15" },
             { "type": "checkpoint", "task": "APP", "action": "ARM" },
-            { "type": "info", "task": "FLAPS 25 / FLAPS 30 / FLAPS FULL", "action": "" },
+            {
+              "type": "info",
+              "task": "FLAPS 25 / FLAPS 30 / FLAPS FULL",
+              "action": ""
+            },
             { "type": "checkpoint", "task": "SPEED BRAKE", "action": "ARM" },
-            { "type": "checkpoint", "task": "ENGINE START SWITCHES", "action": "CONT" },
-            { "type": "checkpoint", "task": "HDG / LANDING RWY", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START SWITCHES",
+              "action": "CONT"
+            },
+            {
+              "type": "checkpoint",
+              "task": "HDG / LANDING RWY",
+              "action": "SET"
+            },
             { "type": "subtitle", "text": "After Glide Slope Engage" },
-            { "type": "checkpoint", "task": "GO-AROUND ALTITUDE", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "GO-AROUND ALTITUDE",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "CMD B", "action": "AS REQUIRED" },
             { "type": "checkpoint", "task": "CABIN LIGHTS", "action": "OFF" },
             { "type": "checkpoint", "task": "FLAPS", "action": "FULL" }
@@ -201,7 +433,11 @@
           "categoryName": "After Landing Checklist",
           "items": [
             { "type": "checkpoint", "task": "FLAPS", "action": "RETRACTED" },
-            { "type": "checkpoint", "task": "SPEED BRAKE", "action": "RETRACTED" },
+            {
+              "type": "checkpoint",
+              "task": "SPEED BRAKE",
+              "action": "RETRACTED"
+            },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "OFF" }
           ]
         },
@@ -209,9 +445,17 @@
           "categoryName": "Holding Point Checklist",
           "items": [
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "POSITION LIGHT", "action": "STEADY" },
+            {
+              "type": "checkpoint",
+              "task": "POSITION LIGHT",
+              "action": "STEADY"
+            },
             { "type": "checkpoint", "task": "APU", "action": "START" },
-            { "type": "checkpoint", "task": "ENGINE START SWITCHES", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START SWITCHES",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "STANDBY" }
           ]
         },
@@ -219,18 +463,42 @@
           "categoryName": "Parking / Shutdown Checklist",
           "items": [
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "ON" },
-            { "type": "checkpoint", "task": "TAXI LIGHT AND RUNWAY LIGHTS", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "TAXI LIGHT AND RUNWAY LIGHTS",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "APU GEN", "action": "ON" },
             { "type": "checkpoint", "task": "APU BLEED", "action": "ON" },
-            { "type": "checkpoint", "task": "ENGINE FUEL CONTROL LEVERS", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE FUEL CONTROL LEVERS",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "FASTEN BELTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "FUEL PUMPS AND HYD PUMPS", "action": "OFF" },
-            { "type": "checkpoint", "task": "ANTI COLISION LIGHT", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PUMPS AND HYD PUMPS",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ANTI COLISION LIGHT",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "WHEEL CHOCKS", "action": "SET" },
             { "type": "checkpoint", "task": "JETWAY", "action": "CALL" },
             { "type": "checkpoint", "task": "DOORS", "action": "OPEN" },
-            { "type": "checkpoint", "task": "LOWER DISPLAY UNIT (DU)", "action": "ON" },
-            { "type": "checkpoint", "task": "<del>SMARTCART</del>", "action": "SEND PIREP" }
+            {
+              "type": "checkpoint",
+              "task": "LOWER DISPLAY UNIT (DU)",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "<del>SMARTCART</del>",
+              "action": "SEND PIREP"
+            }
           ]
         }
       ]
@@ -242,49 +510,153 @@
         {
           "categoryName": "Cockpit Preparation",
           "items": [
-            { "type": "checkpoint", "task": "EFB: GROUND CONNECTIONS", "action": "REQUEST" },
-            { "type": "info", "task": "GROUND POWER/AIR COND UNITY/JETWAY", "action": "" },
-            { "type": "checkpoint", "task": "EFB: DOOR MANAGEMENT", "action": "DISARM/OPEN" },
-            { "type": "checkpoint", "task": "EFB: GROUND MAINTENANCE", "action": "CHECK" },
-            { "type": "checkpoint", "task": "ELECTRIC POWER UP", "action": "SET APU OR GPU" },
+            {
+              "type": "checkpoint",
+              "task": "EFB: GROUND CONNECTIONS",
+              "action": "REQUEST"
+            },
+            {
+              "type": "info",
+              "task": "GROUND POWER/AIR COND UNITY/JETWAY",
+              "action": ""
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: DOOR MANAGEMENT",
+              "action": "DISARM/OPEN"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: GROUND MAINTENANCE",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ELECTRIC POWER UP",
+              "action": "SET APU OR GPU"
+            },
             { "type": "info", "task": "BATERY", "action": "ON" },
-            { "type": "info", "task": "PRIM. AND SEC. EXT PWR", "action": "ON" },
-            { "type": "checkpoint", "task": "EMERGENCY EXIT LIGHT", "action": "GUARD CLOSE" },
+            {
+              "type": "info",
+              "task": "PRIM. AND SEC. EXT PWR",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EMERGENCY EXIT LIGHT",
+              "action": "GUARD CLOSE"
+            },
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "SET" },
-            { "type": "checkpoint", "task": "DSP: BOTTOM STAT", "action": "SEL AND CHECK" },
-            { "type": "info", "task": "HYDRAULICS: NOT SHOW RF MESSAGE", "action": "" },
-            { "type": "info", "task": "OXYGEN: CREW PRESS > 1000", "action": "" },
-            { "type": "checkpoint", "task": "DSP: BOTTOM ENGINE", "action": "SEL AND CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "DSP: BOTTOM STAT",
+              "action": "SEL AND CHECK"
+            },
+            {
+              "type": "info",
+              "task": "HYDRAULICS: NOT SHOW RF MESSAGE",
+              "action": ""
+            },
+            {
+              "type": "info",
+              "task": "OXYGEN: CREW PRESS > 1000",
+              "action": ""
+            },
+            {
+              "type": "checkpoint",
+              "task": "DSP: BOTTOM ENGINE",
+              "action": "SEL AND CHECK"
+            },
             { "type": "info", "task": "OIL QTY > 17", "action": "" },
-            { "type": "checkpoint", "task": "DSP: CHECKLIST", "action": "RESET ALL" }
+            {
+              "type": "checkpoint",
+              "task": "DSP: CHECKLIST",
+              "action": "RESET ALL"
+            }
           ]
         },
         {
           "categoryName": "Preflight Procedure",
           "items": [
             { "type": "checkpoint", "task": "ADIRU", "action": "ON" },
-            { "type": "checkpoint", "task": "THRUST ASYMMETRY COMPENS", "action": "AUTO" },
-            { "type": "checkpoint", "task": "IFE/PASS AND CABIN/UTILITY", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "THRUST ASYMMETRY COMPENS",
+              "action": "AUTO"
+            },
+            {
+              "type": "checkpoint",
+              "task": "IFE/PASS AND CABIN/UTILITY",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "WINDOW HEAT", "action": "ON" },
-            { "type": "checkpoint", "task": "CARGO FIRE", "action": "OFF (EXTINGUISHED)" },
-            { "type": "checkpoint", "task": "ENGINE EEC MODE", "action": "NORMAL" },
+            {
+              "type": "checkpoint",
+              "task": "CARGO FIRE",
+              "action": "OFF (EXTINGUISHED)"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE EEC MODE",
+              "action": "NORMAL"
+            },
             { "type": "checkpoint", "task": "AUTOSTART", "action": "ON" },
             { "type": "checkpoint", "task": "FUEL PUMPS", "action": "OFF" },
             { "type": "checkpoint", "task": "ANTI-ICE", "action": "AUTO" },
             { "type": "checkpoint", "task": "NAV LIGHT", "action": "ON" },
-            { "type": "checkpoint", "task": "LOGO LIGHT", "action": "AS REQUIRED" },
-            { "type": "checkpoint", "task": "CARGO TEMP SEL", "action": "ON (LOW OR HIGH)" },
+            {
+              "type": "checkpoint",
+              "task": "LOGO LIGHT",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "CARGO TEMP SEL",
+              "action": "ON (LOW OR HIGH)"
+            },
             { "type": "checkpoint", "task": "EQUIP COOLING", "action": "AUTO" },
             { "type": "checkpoint", "task": "GASPER", "action": "ON" },
-            { "type": "checkpoint", "task": "RECIRC FANS UPER AND LOWER", "action": "*OFF*" },
-            { "type": "checkpoint", "task": "PACKS L AND R", "action": "*OFF*" },
-            { "type": "checkpoint", "task": "TRIM AIR L AND R", "action": "ON" },
-            { "type": "checkpoint", "task": "ISOLATION VALVES L - C - R", "action": "AUTO" },
-            { "type": "checkpoint", "task": "BLEED AIR ENG L AND R", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "RECIRC FANS UPER AND LOWER",
+              "action": "*OFF*"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PACKS L AND R",
+              "action": "*OFF*"
+            },
+            {
+              "type": "checkpoint",
+              "task": "TRIM AIR L AND R",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ISOLATION VALVES L - C - R",
+              "action": "AUTO"
+            },
+            {
+              "type": "checkpoint",
+              "task": "BLEED AIR ENG L AND R",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "APU BLEED", "action": "AUTO" },
-            { "type": "checkpoint", "task": "OUTFLOW VALVE FWD AND AFT", "action": "AUTO" },
-            { "type": "checkpoint", "task": "EFB: DATA FROM SIMBRIEF", "action": "REQUEST" },
-            { "type": "checkpoint", "task": "METAR AND ATIS INFO", "action": "CHECK DEP/ARR" },
+            {
+              "type": "checkpoint",
+              "task": "OUTFLOW VALVE FWD AND AFT",
+              "action": "AUTO"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: DATA FROM SIMBRIEF",
+              "action": "REQUEST"
+            },
+            {
+              "type": "checkpoint",
+              "task": "METAR AND ATIS INFO",
+              "action": "CHECK DEP/ARR"
+            },
             { "type": "checkpoint", "task": "OXIGEN", "action": "TEST" }
           ]
         },
@@ -300,91 +672,251 @@
             { "type": "checkpoint", "task": "RTE PAGE 2/2", "action": "SET" },
             { "type": "checkpoint", "task": "DEP/ARR", "action": "SET" },
             { "type": "checkpoint", "task": "LEGS", "action": "ROUTE CHECK" },
-            { "type": "checkpoint", "task": "RTE/ PERF INIT>", "action": "REQUEST/SET" },
-            { "type": "checkpoint", "task": "FMC COMM/DES FORECAST", "action": "REQUEST/SET" },
-            { "type": "checkpoint", "task": "FMC COMM/WIND", "action": "REQUEST/SET" }
+            {
+              "type": "checkpoint",
+              "task": "RTE/ PERF INIT>",
+              "action": "REQUEST/SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FMC COMM/DES FORECAST",
+              "action": "REQUEST/SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FMC COMM/WIND",
+              "action": "REQUEST/SET"
+            }
           ]
         },
         {
           "categoryName": "EFIS/MCP Configuration",
           "items": [
-            { "type": "checkpoint", "task": "EFIS: QNH (ALTIMETER)", "action": "SET" },
-            { "type": "checkpoint", "task": "EFIS: TRAFFIC - TFC", "action": "ON" },
-            { "type": "checkpoint", "task": "EFIS: ARPT BUTTON", "action": "ON" },
-            { "type": "checkpoint", "task": "MCP: FLIGHT DIRECTORS L AND R", "action": "ON" },
-            { "type": "checkpoint", "task": "MCP: HDG/TAKEOFF RWY", "action": "SET" },
-            { "type": "checkpoint", "task": "MCP: INITIAL ALTITUDE", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "EFIS: QNH (ALTIMETER)",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFIS: TRAFFIC - TFC",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFIS: ARPT BUTTON",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: FLIGHT DIRECTORS L AND R",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: HDG/TAKEOFF RWY",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: INITIAL ALTITUDE",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "RTO" },
-            { "type": "sim-action", "task": "(PREFLIGHT CHECKLIST)", "action": "" }
+            {
+              "type": "sim-action",
+              "task": "(PREFLIGHT CHECKLIST)",
+              "action": ""
+            }
           ]
         },
         {
           "categoryName": "Before Start Procedure",
           "items": [
-            { "type": "atc", "task": "ATC CLEARANCE (IFR)", "action": "REQUEST" },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (IFR)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "SET" },
-            { "type": "checkpoint", "task": "TAXI AND TAKEOFF", "action": "BRIEFING" },
-            { "type": "checkpoint", "task": "FLIGHT DECK DOOR", "action": "CLOSE" },
-            { "type": "checkpoint", "task": "EFB: DOOR MANAG", "action": "CLOSE AND ARM" },
-            { "type": "checkpoint", "task": "<del>FMC ZFW</del>", "action": "<del>SET</del>" },
-            { "type": "checkpoint", "task": "EFB: TAKEOFF PERFORM", "action": "CALCULATE" },
-            { "type": "checkpoint", "task": "FMC: PERF INIT/THRUST LIM>", "action": "SET" },
-            { "type": "checkpoint", "task": "FMC: TAKEOFF REF", "action": "SET" },
-            { "type": "checkpoint", "task": "MCP: IAS SPEED", "action": "SET V2" },
+            {
+              "type": "checkpoint",
+              "task": "TAXI AND TAKEOFF",
+              "action": "BRIEFING"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FLIGHT DECK DOOR",
+              "action": "CLOSE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: DOOR MANAG",
+              "action": "CLOSE AND ARM"
+            },
+            {
+              "type": "checkpoint",
+              "task": "<del>FMC ZFW</del>",
+              "action": "<del>SET</del>"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: TAKEOFF PERFORM",
+              "action": "CALCULATE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FMC: PERF INIT/THRUST LIM>",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FMC: TAKEOFF REF",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: IAS SPEED",
+              "action": "SET V2"
+            },
             { "type": "checkpoint", "task": "MCP: LNAV/VNAV", "action": "ON" },
             { "type": "checkpoint", "task": "APU", "action": "CHECK ON/START" },
             { "type": "checkpoint", "task": "HYDRAULICS", "action": "ON/AUTO" },
-            { "type": "info", "task": "DEM R=AUTO/ELEC C1 C2/DEM L,C1,C2=AUTO", "action": "" },
-            { "type": "checkpoint", "task": "NO SMOKING/NO ELECTRONIC", "action": "ON" },
+            {
+              "type": "info",
+              "task": "DEM R=AUTO/ELEC C1 C2/DEM L,C1,C2=AUTO",
+              "action": ""
+            },
+            {
+              "type": "checkpoint",
+              "task": "NO SMOKING/NO ELECTRONIC",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "SEAT BELTS", "action": "ON" },
             { "type": "checkpoint", "task": "FUEL PUMPS", "action": "ON" },
             { "type": "checkpoint", "task": "BEACON", "action": "ON" },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "XPNDR" },
-            { "type": "checkpoint", "task": "DSP: BOTTOM FTCL/ TRIM", "action": "SET" },
-            { "type": "checkpoint", "task": "RECIRC FANS UPER AND LOWER", "action": "*ON*" },
+            {
+              "type": "checkpoint",
+              "task": "DSP: BOTTOM FTCL/ TRIM",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "RECIRC FANS UPER AND LOWER",
+              "action": "*ON*"
+            },
             { "type": "checkpoint", "task": "PACKS L AND R", "action": "*ON*" },
-            { "type": "checkpoint", "task": "EFB: GROUND CONNECTIONS", "action": "RELEASE" },
-            { "type": "checkpoint", "task": "EFB: JETWAY", "action": "RELEASE" },
-            { "type": "checkpoint", "task": "EFB: WHEEL CHOCKS", "action": "REMOVE" },
-            { "type": "sim-action", "task": "(BEFORE START CHECKLIST)", "action": "" }
+            {
+              "type": "checkpoint",
+              "task": "EFB: GROUND CONNECTIONS",
+              "action": "RELEASE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: JETWAY",
+              "action": "RELEASE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: WHEEL CHOCKS",
+              "action": "REMOVE"
+            },
+            {
+              "type": "sim-action",
+              "task": "(BEFORE START CHECKLIST)",
+              "action": ""
+            }
           ]
         },
         {
           "categoryName": "Engine Start Procedure",
           "items": [
             { "type": "checkpoint", "task": "PUSHBACK", "action": "REQUEST" },
-            { "type": "checkpoint", "task": "ENGINE START SWITCH R", "action": "START" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START SWITCH R",
+              "action": "START"
+            },
             { "type": "checkpoint", "task": "FUEL CONTROL R", "action": "RUN" },
-            { "type": "checkpoint", "task": "ENGINE START SWITCH L", "action": "START" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START SWITCH L",
+              "action": "START"
+            },
             { "type": "checkpoint", "task": "FUEL CONTROL L", "action": "RUN" },
             { "type": "checkpoint", "task": "FLAPS", "action": "SET" },
             { "type": "checkpoint", "task": "APU", "action": "OFF" },
-            { "type": "checkpoint", "task": "ANTI-ICE", "action": "AS REQUIRED" },
-            { "type": "checkpoint", "task": "DSP: BOTTOM FTCL", "action": "CHECK" },
-            { "type": "checkpoint", "task": "DSP: BOTTOM RECALL", "action": "CHECK" },
-            { "type": "sim-action", "task": "(BEFORE TAXI CHECKLIST)", "action": "" }
+            {
+              "type": "checkpoint",
+              "task": "ANTI-ICE",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "DSP: BOTTOM FTCL",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "DSP: BOTTOM RECALL",
+              "action": "CHECK"
+            },
+            {
+              "type": "sim-action",
+              "task": "(BEFORE TAXI CHECKLIST)",
+              "action": ""
+            }
           ]
         },
         {
           "categoryName": "Before Taxi Procedure",
           "items": [
-            { "type": "atc", "task": "ATC CLEARANCE (TAXI)", "action": "REQUEST" },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (TAXI)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "TAXI LIGHTS", "action": "ON" },
-            { "type": "checkpoint", "task": "RUNWAY TURNOFF LIGHTS", "action": "AS REQUIRED" },
-            { "type": "checkpoint", "task": "AUXILIARY CAMERA LIGHT", "action": "AS REQUIRED" },
-            { "type": "checkpoint", "task": "DOME LIGHT (STORM)", "action": "REDUCE" },
-            { "type": "sim-action", "task": "(BEFORE TAKEOFF CHECKLIST)", "action": "" }
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY TURNOFF LIGHTS",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "AUXILIARY CAMERA LIGHT",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "DOME LIGHT (STORM)",
+              "action": "REDUCE"
+            },
+            {
+              "type": "sim-action",
+              "task": "(BEFORE TAKEOFF CHECKLIST)",
+              "action": ""
+            }
           ]
         },
         {
           "categoryName": "Before Takeoff Procedure",
           "items": [
-            { "type": "atc", "task": "ATC CLEARANCE (DEPART)", "action": "REQUEST" },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (DEPART)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "STROBE LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "TA/RA" },
-            { "type": "checkpoint", "task": "AUXILIARY CAMERA LIGHT", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "AUXILIARY CAMERA LIGHT",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "WEATHER RADAR", "action": "ON" }
           ]
         },
@@ -394,9 +926,21 @@
             { "type": "checkpoint", "task": "GEAR", "action": "UP" },
             { "type": "checkpoint", "task": "CMD", "action": "ENGAGE" },
             { "type": "checkpoint", "task": "FLAPS", "action": "RETRACTED" },
-            { "type": "checkpoint", "task": "ANTI-ICE", "action": "AUTO/CHECK" },
-            { "type": "sim-action", "task": "(AFTER TAKEOFF CHECKLIST)", "action": "" },
-            { "type": "checkpoint", "task": "ALTIMETER", "action": "SET STD (29.92/1013)" },
+            {
+              "type": "checkpoint",
+              "task": "ANTI-ICE",
+              "action": "AUTO/CHECK"
+            },
+            {
+              "type": "sim-action",
+              "task": "(AFTER TAKEOFF CHECKLIST)",
+              "action": ""
+            },
+            {
+              "type": "checkpoint",
+              "task": "ALTIMETER",
+              "action": "SET STD (29.92/1013)"
+            },
             { "type": "subtitle", "text": "Passing 10,000 ft" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "OFF" },
             { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "OFF" },
@@ -408,16 +952,48 @@
         {
           "categoryName": "Cruise Procedure",
           "items": [
-            { "type": "checkpoint", "task": "APPROACH BRIEFING", "action": "CONFIRM" },
-            { "type": "checkpoint", "task": "MCP: ALTITUDE", "action": "RESET" },
-            { "type": "checkpoint", "task": "ARR ALTIMETER", "action": "SET/STBY" },
-            { "type": "checkpoint", "task": "EFB: LANDING PERFORMANCE", "action": "CHECK" },
-            { "type": "checkpoint", "task": "FUEL PREDICTION", "action": "SET" },
-            { "type": "checkpoint", "task": "FMC: APPR SPEED REF", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "APPROACH BRIEFING",
+              "action": "CONFIRM"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MCP: ALTITUDE",
+              "action": "RESET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ARR ALTIMETER",
+              "action": "SET/STBY"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: LANDING PERFORMANCE",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PREDICTION",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FMC: APPR SPEED REF",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "BARO MIN", "action": "CHECK" },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "SET" },
-            { "type": "checkpoint", "task": "DSP: BOTTOM RECALL", "action": "CHECK" },
-            { "type": "sim-action", "task": "(DESCENT CHECKLIST)", "action": "" }
+            {
+              "type": "checkpoint",
+              "task": "DSP: BOTTOM RECALL",
+              "action": "CHECK"
+            },
+            {
+              "type": "sim-action",
+              "task": "(DESCENT CHECKLIST)",
+              "action": ""
+            }
           ]
         },
         {
@@ -429,8 +1005,16 @@
             { "type": "checkpoint", "task": "TAXI LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "LOGO LIGHT", "action": "ON" },
             { "type": "checkpoint", "task": "SEAT BELTS", "action": "ON" },
-            { "type": "checkpoint", "task": "ALTIMETER", "action": "RESET TO LOCAL" },
-            { "type": "sim-action", "task": "(APPROACH CHECKLIST)", "action": "" }
+            {
+              "type": "checkpoint",
+              "task": "ALTIMETER",
+              "action": "RESET TO LOCAL"
+            },
+            {
+              "type": "sim-action",
+              "task": "(APPROACH CHECKLIST)",
+              "action": ""
+            }
           ]
         },
         {
@@ -440,17 +1024,33 @@
             { "type": "checkpoint", "task": "APP", "action": "ARM" },
             { "type": "checkpoint", "task": "SPEED BRAKE", "action": "ARM" },
             { "type": "checkpoint", "task": "LANDING GEAR", "action": "DOWN" },
-            { "type": "checkpoint", "task": "GO-AROUND ALTITUDE", "action": "SET" },
-            { "type": "sim-action", "task": "(LANDING CHECKLIST)", "action": "" }
+            {
+              "type": "checkpoint",
+              "task": "GO-AROUND ALTITUDE",
+              "action": "SET"
+            },
+            {
+              "type": "sim-action",
+              "task": "(LANDING CHECKLIST)",
+              "action": ""
+            }
           ]
         },
         {
           "categoryName": "Landing Procedure",
           "items": [
-            { "type": "checkpoint", "task": "SPEED BRAKE", "action": "RETRACTED" },
+            {
+              "type": "checkpoint",
+              "task": "SPEED BRAKE",
+              "action": "RETRACTED"
+            },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "OFF" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "AS REQUIRED" },
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY LIGHTS",
+              "action": "AS REQUIRED"
+            },
             { "type": "checkpoint", "task": "STROBE LIGHTS", "action": "OFF" },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "XPNDR" },
             { "type": "checkpoint", "task": "FLAPS", "action": "RETRACTED" },
@@ -462,17 +1062,49 @@
           "categoryName": "Parking / Shutdown Procedure",
           "items": [
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "ON" },
-            { "type": "checkpoint", "task": "TAXI LIGHT AND RUNWAY LIGHTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "FUEL CONTROL LEVERS", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "TAXI LIGHT AND RUNWAY LIGHTS",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL CONTROL LEVERS",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "FASTEN BELTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "HYDRAULIC PUMPS", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "HYDRAULIC PUMPS",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "FUEL PUMPS", "action": "OFF" },
             { "type": "checkpoint", "task": "BEACON", "action": "OFF" },
-            { "type": "sim-action", "task": "(SHUTDOWN CHECKLIST)", "action": "" },
-            { "type": "checkpoint", "task": "EFB: WHEEL CHOCKS", "action": "SET" },
-            { "type": "checkpoint", "task": "EFB: GROUND CONNECTIONS", "action": "REQUEST" },
-            { "type": "checkpoint", "task": "EFB: DOOR MANAGEMENT", "action": "DISARM/OPEN" },
-            { "type": "checkpoint", "task": "FLIGHT DECK DOOR", "action": "OPEN" }
+            {
+              "type": "sim-action",
+              "task": "(SHUTDOWN CHECKLIST)",
+              "action": ""
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: WHEEL CHOCKS",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: GROUND CONNECTIONS",
+              "action": "REQUEST"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EFB: DOOR MANAGEMENT",
+              "action": "DISARM/OPEN"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FLIGHT DECK DOOR",
+              "action": "OPEN"
+            }
           ]
         }
       ]
@@ -484,22 +1116,50 @@
         {
           "categoryName": "Cockpit Preparation",
           "items": [
-            { "type": "checkpoint", "task": "BATTERIES 1, 2 AND 3", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "BATTERIES 1, 2 AND 3",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "EXT PWR", "action": "ON" },
-            { "type": "checkpoint", "task": "CABIN LIGHTS", "action": "AS REQUIRED" },
+            {
+              "type": "checkpoint",
+              "task": "CABIN LIGHTS",
+              "action": "AS REQUIRED"
+            },
             { "type": "checkpoint", "task": "IRS ALIGNMENT", "action": "NAV" },
             { "type": "checkpoint", "task": "NO SMOKING", "action": "ON" },
             { "type": "checkpoint", "task": "GALLEY", "action": "ON" },
             { "type": "checkpoint", "task": "NAV & LOGO", "action": "ON" },
-            { "type": "checkpoint", "task": "OXYGEN (LO PR SUPPLY)", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "OXYGEN (LO PR SUPPLY)",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "WINDOW HEATER", "action": "ON" },
-            { "type": "checkpoint", "task": "FMGS ROUTE FROM SIMBRIEF", "action": "IMPORT" },
+            {
+              "type": "checkpoint",
+              "task": "FMGS ROUTE FROM SIMBRIEF",
+              "action": "IMPORT"
+            },
             { "type": "checkpoint", "task": "FMGS INIT PAGE", "action": "SET" },
             { "type": "checkpoint", "task": "JETWAY", "action": "CALL" },
             { "type": "checkpoint", "task": "DOORS", "action": "OPEN" },
-            { "type": "checkpoint", "task": "TABLET MASS AND BALANCE", "action": "SET/APPLY" },
-            { "type": "checkpoint", "task": "TABLET TAKEOFF PERFORM", "action": "SET/CALC" },
-            { "type": "checkpoint", "task": "PITCH TRIM/YAW DAMPER/ATS", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "TABLET MASS AND BALANCE",
+              "action": "SET/APPLY"
+            },
+            {
+              "type": "checkpoint",
+              "task": "TABLET TAKEOFF PERFORM",
+              "action": "SET/CALC"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PITCH TRIM/YAW DAMPER/ATS",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "FUEL PUMPS", "action": "ON" }
           ]
         },
@@ -507,19 +1167,39 @@
           "categoryName": "FMGS Configuration",
           "items": [
             { "type": "checkpoint", "task": "INIT PAGE 2", "action": "SET" },
-            { "type": "checkpoint", "task": "F-PLAN PAGE", "action": "SET DEP/ARR" },
+            {
+              "type": "checkpoint",
+              "task": "F-PLAN PAGE",
+              "action": "SET DEP/ARR"
+            },
             { "type": "checkpoint", "task": "ROUTE", "action": "CHECK" },
             { "type": "checkpoint", "task": "TO/APPR", "action": "SET" },
-            { "type": "atc", "task": "ATC CLEARANCE (IFR)", "action": "REQUEST" }
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (IFR)",
+              "action": "REQUEST"
+            }
           ]
         },
         {
           "categoryName": "FCU Configuration",
           "items": [
-            { "type": "checkpoint", "task": "SPD/MACH (SET V2)", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "SPD/MACH (SET V2)",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "ALTITUDE", "action": "SET" },
-            { "type": "checkpoint", "task": "LANDING ELEVATION", "action": "SET" },
-            { "type": "checkpoint", "task": "TAKEOFF SPEED REF", "action": "TOGA/FLX TO" },
+            {
+              "type": "checkpoint",
+              "task": "LANDING ELEVATION",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "TAKEOFF SPEED REF",
+              "action": "TOGA/FLX TO"
+            },
             { "type": "checkpoint", "task": "QNH", "action": "SET" }
           ]
         },
@@ -528,9 +1208,17 @@
           "items": [
             { "type": "checkpoint", "task": "DOORS", "action": "CLOSE" },
             { "type": "checkpoint", "task": "JETWAY", "action": "RELEASE" },
-            { "type": "checkpoint", "task": "WHEEL CHOCKS", "action": "REMOVED" },
+            {
+              "type": "checkpoint",
+              "task": "WHEEL CHOCKS",
+              "action": "REMOVED"
+            },
             { "type": "checkpoint", "task": "COCKPIT DOOR", "action": "CLOSE" },
-            { "type": "checkpoint", "task": "SEAT BELTS SIGNS", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "SEAT BELTS SIGNS",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "HYD PUMPS", "action": "ON" },
             { "type": "checkpoint", "task": "BEACON", "action": "ON" },
             { "type": "checkpoint", "task": "MASTER SW", "action": "ON" },
@@ -538,19 +1226,43 @@
             { "type": "checkpoint", "task": "PROBE HEAT", "action": "ON" },
             { "type": "checkpoint", "task": "APU BLEED", "action": "ON" },
             { "type": "checkpoint", "task": "EXT POWER", "action": "OFF" },
-            { "type": "checkpoint", "task": "EXTERNAL UNITS GPU", "action": "DISMISS" },
-            { "type": "checkpoint", "task": "TRANSPONDER", "action": "SET/STBY" },
-            { "type": "checkpoint", "task": "<del>SMARTCARS</del>", "action": "ON" }
+            {
+              "type": "checkpoint",
+              "task": "EXTERNAL UNITS GPU",
+              "action": "DISMISS"
+            },
+            {
+              "type": "checkpoint",
+              "task": "TRANSPONDER",
+              "action": "SET/STBY"
+            },
+            {
+              "type": "checkpoint",
+              "task": "<del>SMARTCARS</del>",
+              "action": "ON"
+            }
           ]
         },
         {
           "categoryName": "Engine Start Checklist",
           "items": [
             { "type": "checkpoint", "task": "PUSHBACK", "action": "START" },
-            { "type": "checkpoint", "task": "ENGINE START IGNITION", "action": "START A" },
-            { "type": "checkpoint", "task": "START 2 (25% N2)", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START IGNITION",
+              "action": "START A"
+            },
+            {
+              "type": "checkpoint",
+              "task": "START 2 (25% N2)",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "HP VALVE ENG 2", "action": "ON" },
-            { "type": "checkpoint", "task": "START 1 (25% N2)", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "START 1 (25% N2)",
+              "action": "ON"
+            },
             { "type": "checkpoint", "task": "HP VALVE ENG 1", "action": "ON" }
           ]
         },
@@ -558,7 +1270,11 @@
           "categoryName": "After Start Checklist",
           "items": [
             { "type": "checkpoint", "task": "MASTER SW", "action": "OFF" },
-            { "type": "checkpoint", "task": "ENGINE START IGNITION", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START IGNITION",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "APU BLEED", "action": "OFF" },
             { "type": "checkpoint", "task": "AUTOBRAKE", "action": "MAX" },
             { "type": "checkpoint", "task": "FLAPS", "action": "SET" },
@@ -569,15 +1285,27 @@
             { "type": "checkpoint", "task": "NAV", "action": "ON" },
             { "type": "checkpoint", "task": "PROFILE", "action": "ON" },
             { "type": "checkpoint", "task": "ECAM MEMO", "action": "CHECK" },
-            { "type": "atc", "task": "ATC CLEARANCE (TAXI)", "action": "REQUEST" },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (TAXI)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "TAXI LIGHT", "action": "TAXI" },
-            { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "AS REQUIRED" }
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY LIGHTS",
+              "action": "AS REQUIRED"
+            }
           ]
         },
         {
           "categoryName": "Before Takeoff Checklist",
           "items": [
-            { "type": "atc", "task": "ATC CLEARANCE (DEPART)", "action": "REQUEST" },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (DEPART)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "TA/RA" },
             { "type": "checkpoint", "task": "STROBE LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "HDG HEADING", "action": "ON" },
@@ -596,46 +1324,90 @@
             { "type": "checkpoint", "task": "THR CLB", "action": "AUTO/CHECK" },
             { "type": "checkpoint", "task": "GEAR", "action": "OFF" },
             { "type": "subtitle", "text": "Passing TA (Transition-Altitude)" },
-            { "type": "checkpoint", "task": "QNH AFTER TRANSITION ALTITUDE", "action": "STD" },
+            {
+              "type": "checkpoint",
+              "task": "QNH AFTER TRANSITION ALTITUDE",
+              "action": "STD"
+            },
             { "type": "subtitle", "text": "Passing 10,000 Feet" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "TAXI AND RUNWAY LIGHTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "SEAT BELTS SIGNS", "action": "OFF" }
+            {
+              "type": "checkpoint",
+              "task": "TAXI AND RUNWAY LIGHTS",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "SEAT BELTS SIGNS",
+              "action": "OFF"
+            }
           ]
         },
         {
           "categoryName": "Cruise Checklist",
           "items": [
-            { "type": "checkpoint", "task": "APPROACH BRIEFING", "action": "CONFIRM" },
+            {
+              "type": "checkpoint",
+              "task": "APPROACH BRIEFING",
+              "action": "CONFIRM"
+            },
             { "type": "checkpoint", "task": "ALTITUDE FCU", "action": "RESET" }
           ]
         },
         {
           "categoryName": "Descent Checklist",
           "items": [
-            { "type": "checkpoint", "task": "CHECK RUNWAY IN USE", "action": "CHECK" },
-            { "type": "checkpoint", "task": "FMGS TO/APPR", "action": "CONFIG" },
+            {
+              "type": "checkpoint",
+              "task": "CHECK RUNWAY IN USE",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FMGS TO/APPR",
+              "action": "CONFIG"
+            },
             { "type": "checkpoint", "task": "ILS LOC/COURSE", "action": "SET" },
             { "type": "subtitle", "text": "Passing 10,000 Feet" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "TAXI LIGHTS", "action": "TO" },
-            { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "AS REQUIRED" },
-            { "type": "checkpoint", "task": "SEAT BELTS SIGNS", "action": "ON" },
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY LIGHTS",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "SEAT BELTS SIGNS",
+              "action": "ON"
+            },
             { "type": "subtitle", "text": "Passing TA (Transition-Altitude)" },
-            { "type": "checkpoint", "task": "QNH BELOW TRANSITION ALTITUDE", "action": "STD" }
+            {
+              "type": "checkpoint",
+              "task": "QNH BELOW TRANSITION ALTITUDE",
+              "action": "STD"
+            }
           ]
         },
         {
           "categoryName": "Approach Checklist",
           "items": [
             { "type": "checkpoint", "task": "FCU ILS MODE", "action": "ON" },
-            { "type": "checkpoint", "task": "FMGS TO/APPR FINAL APPROACH", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "FMGS TO/APPR FINAL APPROACH",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "FLAPS", "action": "SET" },
             { "type": "checkpoint", "task": "LAND", "action": "ON" },
             { "type": "checkpoint", "task": "SPOILER", "action": "ARM" },
             { "type": "checkpoint", "task": "GEAR", "action": "DOWN" },
             { "type": "checkpoint", "task": "AUTO BRAKE", "action": "SET" },
-            { "type": "checkpoint", "task": "ALT MISSED APPROACH", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "ALT MISSED APPROACH",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "AUTO PILOT", "action": "OFF" }
           ]
         },
@@ -652,8 +1424,16 @@
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "OFF" },
             { "type": "checkpoint", "task": "STROBE LIGHT", "action": "OFF" },
             { "type": "checkpoint", "task": "TAXI LIGHT", "action": "TAXI" },
-            { "type": "checkpoint", "task": "RUNWAY LIGHTS", "action": "AS REQUIRED" },
-            { "type": "checkpoint", "task": "TRANSPONDER", "action": "STANDBY" },
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY LIGHTS",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "TRANSPONDER",
+              "action": "STANDBY"
+            },
             { "type": "checkpoint", "task": "WX RADAR", "action": "OFF" },
             { "type": "checkpoint", "task": "MASTER SW", "action": "ON" },
             { "type": "checkpoint", "task": "APU", "action": "START" },
@@ -664,9 +1444,21 @@
           "categoryName": "Parking Checklist",
           "items": [
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "ON" },
-            { "type": "checkpoint", "task": "TAXI AND RUNWAY LIGHTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "HYD VALVE ENG 1 & 2", "action": "OFF" },
-            { "type": "checkpoint", "task": "SEAT BELTS SIGNS", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "TAXI AND RUNWAY LIGHTS",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "HYD VALVE ENG 1 & 2",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "SEAT BELTS SIGNS",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "HYD PUMPS", "action": "OFF" },
             { "type": "checkpoint", "task": "FUEL PUMPS", "action": "OFF" },
             { "type": "checkpoint", "task": "PROBE HEAT", "action": "OFF" },
@@ -674,7 +1466,11 @@
             { "type": "checkpoint", "task": "WHEEL CHOCKS", "action": "SET" },
             { "type": "checkpoint", "task": "JETWAY", "action": "CALL" },
             { "type": "checkpoint", "task": "DOORS", "action": "OPEN" },
-            { "type": "checkpoint", "task": "<del>SMART CARS PIREP</del>", "action": "SEND" },
+            {
+              "type": "checkpoint",
+              "task": "<del>SMART CARS PIREP</del>",
+              "action": "SEND"
+            },
             { "type": "checkpoint", "task": "COCKPIT DOOR", "action": "OPEN" }
           ]
         }
@@ -688,32 +1484,88 @@
           "categoryName": "Cockpit Preparation",
           "items": [
             { "type": "checkpoint", "task": "BATTERY", "action": "ON" },
-            { "type": "checkpoint", "task": "FUEL PUMP ENG 2", "action": "RUN" },
-            { "type": "checkpoint", "task": "ENGINE START", "action": "START A & B" },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PUMP ENG 2",
+              "action": "RUN"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START",
+              "action": "START A & B"
+            },
             { "type": "checkpoint", "task": "PROP BRAKE", "action": "ON" },
-            { "type": "checkpoint", "task": "ENGINE START", "action": "START 2" },
-            { "type": "checkpoint", "task": "CONDITION FUEL 2 SO", "action": "FTR" },
-            { "type": "checkpoint", "task": "MAIN ELEC PWR|DC GEN 2", "action": "ON/CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START",
+              "action": "START 2"
+            },
+            {
+              "type": "checkpoint",
+              "task": "CONDITION FUEL 2 SO",
+              "action": "FTR"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MAIN ELEC PWR|DC GEN 2",
+              "action": "ON/CHECK"
+            },
             { "type": "checkpoint", "task": "ACW GEN 2", "action": "ON/CHECK" },
-            { "type": "checkpoint", "task": "CABIN LIGHTS", "action": "AS REQUIRED" },
+            {
+              "type": "checkpoint",
+              "task": "CABIN LIGHTS",
+              "action": "AS REQUIRED"
+            },
             { "type": "checkpoint", "task": "LOGO LIGHT", "action": "ON" },
             { "type": "checkpoint", "task": "NO DEVICE", "action": "ON" },
             { "type": "checkpoint", "task": "DOORS", "action": "OPEN" },
-            { "type": "checkpoint", "task": "EMERGENCY LIGHTS", "action": "ARM" },
+            {
+              "type": "checkpoint",
+              "task": "EMERGENCY LIGHTS",
+              "action": "ARM"
+            },
             { "type": "checkpoint", "task": "ALTITUDE", "action": "SET" },
             { "type": "checkpoint", "task": "ALTIMETER", "action": "SET" },
-            { "type": "checkpoint", "task": "LANDING ELEV", "action": "MAN/SET" },
-            { "type": "checkpoint", "task": "POWER MANAGEMENT", "action": "TO/SET" }
+            {
+              "type": "checkpoint",
+              "task": "LANDING ELEV",
+              "action": "MAN/SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "POWER MANAGEMENT",
+              "action": "TO/SET"
+            }
           ]
         },
         {
           "categoryName": "FMS Configuration",
           "items": [
-            { "type": "checkpoint", "task": "DATA>INIT>POS INIT|GPS POSITION", "action": "SET" },
-            { "type": "checkpoint", "task": "WEIGHT>ZFW|FOB|RESERVE", "action": "SET" },
-            { "type": "checkpoint", "task": "FPLN INIT>ROUTE", "action": "SET" },
-            { "type": "checkpoint", "task": "PERF>TAKE OFF>TRANS ALT", "action": "SET" },
-            { "type": "atc", "task": "ATC CLEARANCE (IFR)", "action": "REQUEST" }
+            {
+              "type": "checkpoint",
+              "task": "DATA>INIT>POS INIT|GPS POSITION",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "WEIGHT>ZFW|FOB|RESERVE",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FPLN INIT>ROUTE",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PERF>TAKE OFF>TRANS ALT",
+              "action": "SET"
+            },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (IFR)",
+              "action": "REQUEST"
+            }
           ]
         },
         {
@@ -721,51 +1573,119 @@
           "items": [
             { "type": "checkpoint", "task": "DOORS", "action": "CLOSE/CHECK" },
             { "type": "checkpoint", "task": "TAIL PROP", "action": "REMOVE" },
-            { "type": "checkpoint", "task": "WHEEL CHOCKS", "action": "REMOVE" },
+            {
+              "type": "checkpoint",
+              "task": "WHEEL CHOCKS",
+              "action": "REMOVE"
+            },
             { "type": "checkpoint", "task": "BEACON", "action": "ON" },
             { "type": "checkpoint", "task": "SEAT BELTS", "action": "ON" },
             { "type": "checkpoint", "task": "PROBES", "action": "ON" },
-            { "type": "checkpoint", "task": "WINDSHIELD HTG L AND R", "action": "ON" },
-            { "type": "checkpoint", "task": "OXYGEN - MAIN SUPPLY", "action": "ON" },
-            { "type": "checkpoint", "task": "COCKPIT DOOR", "action": "CLOSE/DENY" },
-            { "type": "checkpoint", "task": "<del>SMARTCARS</del>", "action": "START" }
+            {
+              "type": "checkpoint",
+              "task": "WINDSHIELD HTG L AND R",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "OXYGEN - MAIN SUPPLY",
+              "action": "ON"
+            },
+            {
+              "type": "checkpoint",
+              "task": "COCKPIT DOOR",
+              "action": "CLOSE/DENY"
+            },
+            {
+              "type": "checkpoint",
+              "task": "<del>SMARTCARS</del>",
+              "action": "START"
+            }
           ]
         },
         {
           "categoryName": "Transponder",
           "items": [
-            { "type": "checkpoint", "task": "<del>RMS>RADIO FREQUENCY</del>", "action": "SET" },
-            { "type": "checkpoint", "task": "RMS>TRANSPONDER", "action": "STBY" }
+            {
+              "type": "checkpoint",
+              "task": "<del>RMS>RADIO FREQUENCY</del>",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "RMS>TRANSPONDER",
+              "action": "STBY"
+            }
           ]
         },
         {
           "categoryName": "Engine Start",
           "items": [
             { "type": "checkpoint", "task": "PUSHBACK", "action": "START" },
-            { "type": "checkpoint", "task": "AUX HYDRAULIC PUMP", "action": "SET" },
-            { "type": "checkpoint", "task": "PROP BRAKE", "action": "OFF/GRD CLOSE" },
-            { "type": "checkpoint", "task": "CONDITION FUEL 2 SO", "action": "AUTO" },
-            { "type": "checkpoint", "task": "FUEL PUMP ENG 1", "action": "RUN" },
-            { "type": "checkpoint", "task": "ENGINE START", "action": "START 1" },
-            { "type": "checkpoint", "task": "CONDITION FUEL 1 SO", "action": "AUTO" }
+            {
+              "type": "checkpoint",
+              "task": "AUX HYDRAULIC PUMP",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PROP BRAKE",
+              "action": "OFF/GRD CLOSE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "CONDITION FUEL 2 SO",
+              "action": "AUTO"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PUMP ENG 1",
+              "action": "RUN"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE START",
+              "action": "START 1"
+            },
+            {
+              "type": "checkpoint",
+              "task": "CONDITION FUEL 1 SO",
+              "action": "AUTO"
+            }
           ]
         },
         {
           "categoryName": "After Start Checklist",
           "items": [
             { "type": "checkpoint", "task": "ENGINE START", "action": "OFF" },
-            { "type": "checkpoint", "task": "MAIN ELEC PWR|DC GEN 1", "action": "ON/CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "MAIN ELEC PWR|DC GEN 1",
+              "action": "ON/CHECK"
+            },
             { "type": "checkpoint", "task": "ACW GEN 1", "action": "ON/CHECK" },
             { "type": "checkpoint", "task": "HYD POWER", "action": "ON/CHECK" },
             { "type": "checkpoint", "task": "TRU", "action": "ON" },
-            { "type": "checkpoint", "task": "PERF>TAKE OFF SPEED", "action": "CONFIRM" },
+            {
+              "type": "checkpoint",
+              "task": "PERF>TAKE OFF SPEED",
+              "action": "CONFIRM"
+            },
             { "type": "checkpoint", "task": "FLAPS", "action": "SET 15" },
             { "type": "checkpoint", "task": "TRIM", "action": "SET" },
             { "type": "checkpoint", "task": "WEATHER RADAR", "action": "WX" },
             { "type": "checkpoint", "task": "GUST LOCK", "action": "OFF" },
             { "type": "checkpoint", "task": "TO CONFIG", "action": "TEST" },
-            { "type": "checkpoint", "task": "CABIN LIGHTS", "action": "AS REQUIRED" },
-            { "type": "atc", "task": "ATC CLEARANCE (TAXI)", "action": "REQUEST" },
+            {
+              "type": "checkpoint",
+              "task": "CABIN LIGHTS",
+              "action": "AS REQUIRED"
+            },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (TAXI)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "TAXI LIGHT", "action": "ON" },
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "OFF" }
           ]
@@ -773,7 +1693,11 @@
         {
           "categoryName": "Before Take-off Checklist",
           "items": [
-            { "type": "atc", "task": "ATC CLEARANCE (DEPART)", "action": "REQUEST" },
+            {
+              "type": "atc",
+              "task": "ATC CLEARANCE (DEPART)",
+              "action": "REQUEST"
+            },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "STROBE LIGHT", "action": "ON" },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "ON" },
@@ -786,13 +1710,25 @@
         {
           "categoryName": "After Take-off Checklist",
           "items": [
-            { "type": "checkpoint", "task": "POSITIVE CLIMB", "action": "GEAR UP" },
+            {
+              "type": "checkpoint",
+              "task": "POSITIVE CLIMB",
+              "action": "GEAR UP"
+            },
             { "type": "checkpoint", "task": "VNAV", "action": "ON" },
             { "type": "checkpoint", "task": "AUTOPILOT", "action": "ON" },
-            { "type": "checkpoint", "task": "POWER MANAGEMENT", "action": "CLB/SET" },
+            {
+              "type": "checkpoint",
+              "task": "POWER MANAGEMENT",
+              "action": "CLB/SET"
+            },
             { "type": "checkpoint", "task": "FLAPS", "action": "ZERO" },
             { "type": "subtitle", "text": "Passing TA (Transition-Altitude)" },
-            { "type": "checkpoint", "task": "QNH AFTER TRANSITION ALTITUDE", "action": "STD" },
+            {
+              "type": "checkpoint",
+              "task": "QNH AFTER TRANSITION ALTITUDE",
+              "action": "STD"
+            },
             { "type": "subtitle", "text": "Passing 10'000 ft" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "OFF" },
             { "type": "checkpoint", "task": "TAXI LIGHTS", "action": "OFF" },
@@ -802,8 +1738,16 @@
         {
           "categoryName": "Cruise Checklist",
           "items": [
-            { "type": "checkpoint", "task": "POWER MANAGEMENT", "action": "CRZ/SET" },
-            { "type": "checkpoint", "task": "ALTITUDE 5MIN BEFORE TOD", "action": "RESET" },
+            {
+              "type": "checkpoint",
+              "task": "POWER MANAGEMENT",
+              "action": "CRZ/SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ALTITUDE 5MIN BEFORE TOD",
+              "action": "RESET"
+            },
             { "type": "checkpoint", "task": "FMA VNAV ALT", "action": "CHECK" }
           ]
         },
@@ -811,27 +1755,51 @@
           "categoryName": "Descent Checklist",
           "items": [
             { "type": "checkpoint", "task": "THRUST", "action": "SET MANUAL" },
-            { "type": "checkpoint", "task": "RUNWAY IN USE", "action": "CHECK" },
-            { "type": "checkpoint", "task": "PERF>APPROACH|TRANS ALT|QNH", "action": "SET" },
-            { "type": "checkpoint", "task": "RMS>NAV|ILS LOC FREQ", "action": "AS REQUIRED" },
+            {
+              "type": "checkpoint",
+              "task": "RUNWAY IN USE",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PERF>APPROACH|TRANS ALT|QNH",
+              "action": "SET"
+            },
+            {
+              "type": "checkpoint",
+              "task": "RMS>NAV|ILS LOC FREQ",
+              "action": "AS REQUIRED"
+            },
             { "type": "checkpoint", "task": "MINIMUMS", "action": "SET" },
             { "type": "subtitle", "text": "Below 10'000 ft" },
             { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "ON" },
             { "type": "checkpoint", "task": "TAXI LIGHT", "action": "ON" },
             { "type": "checkpoint", "task": "SEAT BELTS", "action": "ON" },
             { "type": "subtitle", "text": "Passing TA (Transition-Altitude)" },
-            { "type": "checkpoint", "task": "QNH AIRPORT DESTINATION", "action": "SET" }
+            {
+              "type": "checkpoint",
+              "task": "QNH AIRPORT DESTINATION",
+              "action": "SET"
+            }
           ]
         },
         {
           "categoryName": "Approach Checklist",
           "items": [
-            { "type": "checkpoint", "task": "FMC: PROGR/APP SPEED", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "FMC: PROGR/APP SPEED",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "FLAPS", "action": "SET 15" },
             { "type": "checkpoint", "task": "COURSE (HDG)", "action": "SET" },
             { "type": "checkpoint", "task": "MCP: HDG", "action": "SET" },
             { "type": "checkpoint", "task": "MCP: V/ILS1", "action": "SET" },
-            { "type": "checkpoint", "task": "MCP: APP", "action": "AS REQUIRED" }
+            {
+              "type": "checkpoint",
+              "task": "MCP: APP",
+              "action": "AS REQUIRED"
+            }
           ]
         },
         {
@@ -839,7 +1807,11 @@
           "items": [
             { "type": "checkpoint", "task": "GEAR", "action": "DOWN" },
             { "type": "checkpoint", "task": "FLAPS", "action": "SET 30" },
-            { "type": "checkpoint", "task": "POWER MANAGEMENT", "action": "TO/SET" },
+            {
+              "type": "checkpoint",
+              "task": "POWER MANAGEMENT",
+              "action": "TO/SET"
+            },
             { "type": "checkpoint", "task": "MISSED APPROACH", "action": "SET" }
           ]
         },
@@ -868,18 +1840,42 @@
             { "type": "checkpoint", "task": "TAXI LIGHT", "action": "OFF" },
             { "type": "checkpoint", "task": "WHEEL CHOCKS", "action": "SET" },
             { "type": "checkpoint", "task": "TAIL PROP", "action": "SET" },
-            { "type": "checkpoint", "task": "CONDITION FUEL 1 & 2 SO", "action": "FTR" },
+            {
+              "type": "checkpoint",
+              "task": "CONDITION FUEL 1 & 2 SO",
+              "action": "FTR"
+            },
             { "type": "checkpoint", "task": "PROP BRAKE", "action": "ON" },
-            { "type": "checkpoint", "task": "CONDITION FUEL 1 SO", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "CONDITION FUEL 1 SO",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "BEACON", "action": "OFF" },
             { "type": "checkpoint", "task": "SEAT BELTS", "action": "OFF" },
-            { "type": "checkpoint", "task": "WINDSHIELD HTG L AND R", "action": "OFF" },
-            { "type": "checkpoint", "task": "ACW GEN1 AND GEN2", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "WINDSHIELD HTG L AND R",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ACW GEN1 AND GEN2",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "HYD POWER", "action": "OFF" },
-            { "type": "checkpoint", "task": "OXYGEN MAIN SUPPLY", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "OXYGEN MAIN SUPPLY",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "DOORS", "action": "OPEN" },
             { "type": "checkpoint", "task": "COCKPIT DOOR", "action": "OPEN" },
-            { "type": "checkpoint", "task": "<del>SMARTCARS</del>", "action": "SEND PRE" }
+            {
+              "type": "checkpoint",
+              "task": "<del>SMARTCARS</del>",
+              "action": "SEND PRE"
+            }
           ]
         }
       ]
@@ -892,32 +1888,72 @@
           "categoryName": "BEFORE ENGINE START",
           "items": [
             { "type": "checkpoint", "task": "PREFLIGHT", "action": "COMPLETE" },
-            { "type": "checkpoint", "task": "CONTROL LOCK", "action": "REMOVED" },
-            { "type": "checkpoint", "task": "MANEUVER SPEEDS", "action": "REVIEW" },
+            {
+              "type": "checkpoint",
+              "task": "CONTROL LOCK",
+              "action": "REMOVED"
+            },
+            {
+              "type": "checkpoint",
+              "task": "MANEUVER SPEEDS",
+              "action": "REVIEW"
+            },
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "SET" },
             { "type": "checkpoint", "task": "GEAR SWITCH", "action": "DOWN" },
             { "type": "checkpoint", "task": "FLAPS", "action": "UP" },
             { "type": "checkpoint", "task": "RADIOS", "action": "OFF" },
-            { "type": "checkpoint", "task": "AUTOPILOT MASTER", "action": "OFF" },
-            { "type": "checkpoint", "task": "AVIONICS MASTER", "action": "OFF" },
-            { "type": "checkpoint", "task": "ALL ELECTRICAL SWITCHES", "action": "OFF" },
-            { "type": "checkpoint", "task": "CIRCUIT BREAKERS", "action": "IN" },
-            { "type": "checkpoint", "task": "FUEL QUANTITY", "action": "CHECK" },
-            { "type": "checkpoint", "task": "PILOT HEAT", "action": "CHECK AMPS" },
+            {
+              "type": "checkpoint",
+              "task": "AUTOPILOT MASTER",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "AVIONICS MASTER",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ALL ELECTRICAL SWITCHES",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "CIRCUIT BREAKERS",
+              "action": "IN"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL QUANTITY",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "PILOT HEAT",
+              "action": "CHECK AMPS"
+            },
             { "type": "checkpoint", "task": "ROTATING BEACON", "action": "ON" }
           ]
         },
         {
           "categoryName": "ENGINE START",
           "items": [
-            { "type": "checkpoint", "task": "FUEL SELECTORS", "action": "DESIRED TANK" },
+            {
+              "type": "checkpoint",
+              "task": "FUEL SELECTORS",
+              "action": "DESIRED TANK"
+            },
             { "type": "checkpoint", "task": "MIXTURE", "action": "RICH" },
             { "type": "checkpoint", "task": "PROP", "action": "FULL FORWARD" },
             { "type": "checkpoint", "task": "THROTTLE", "action": "CRACKED" },
             { "type": "checkpoint", "task": "CARB HEAT", "action": "OFF" },
             { "type": "checkpoint", "task": "MASTER SWITCH", "action": "ON" },
             { "type": "checkpoint", "task": "FUEL PUMP", "action": "ON" },
-            { "type": "checkpoint", "task": "FUEL PRESSURE", "action": "CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PRESSURE",
+              "action": "CHECK"
+            },
             { "type": "checkpoint", "task": "FUEL PUMP", "action": "OFF" },
             { "type": "checkpoint", "task": "PRIMER", "action": "1-5 STROKES" },
             { "type": "checkpoint", "task": "MAGS", "action": "BOTH" },
@@ -934,18 +1970,42 @@
             { "type": "checkpoint", "task": "AVIONICS MASTER", "action": "ON" },
             { "type": "checkpoint", "task": "AMMETER", "action": "CHECK" },
             { "type": "checkpoint", "task": "RADIOS", "action": "ON" },
-            { "type": "checkpoint", "task": "FLIGHT PLAN", "action": "PROGRAM" },
+            {
+              "type": "checkpoint",
+              "task": "FLIGHT PLAN",
+              "action": "PROGRAM"
+            },
             { "type": "checkpoint", "task": "FREQUENCIES", "action": "TUNE" },
             { "type": "checkpoint", "task": "ADS-B", "action": "ON" },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "ALT" },
             { "type": "checkpoint", "task": "AUTO PILOT", "action": "TEST" },
-            { "type": "checkpoint", "task": "HEADING INDICATOR", "action": "SET" },
+            {
+              "type": "checkpoint",
+              "task": "HEADING INDICATOR",
+              "action": "SET"
+            },
             { "type": "checkpoint", "task": "ALTIMETER", "action": "SET" },
-            { "type": "checkpoint", "task": "LANDING GEAR LAMP", "action": "GREEN" },
+            {
+              "type": "checkpoint",
+              "task": "LANDING GEAR LAMP",
+              "action": "GREEN"
+            },
             { "type": "checkpoint", "task": "NAV LIGHTS", "action": "AS REQ" },
-            { "type": "checkpoint", "task": "PARKING BRAKE", "action": "RELEASE" },
-            { "type": "checkpoint", "task": "BRAKES ON INITIAL ROLL", "action": "TEST" },
-            { "type": "checkpoint", "task": "FLIGHT INSTRUMENTS", "action": "CHECK" }
+            {
+              "type": "checkpoint",
+              "task": "PARKING BRAKE",
+              "action": "RELEASE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "BRAKES ON INITIAL ROLL",
+              "action": "TEST"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FLIGHT INSTRUMENTS",
+              "action": "CHECK"
+            }
           ]
         },
         {
@@ -953,11 +2013,23 @@
           "items": [
             { "type": "checkpoint", "task": "POSITION", "action": "INTO WIND" },
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "SET" },
-            { "type": "checkpoint", "task": "FUEL QUANTITY", "action": "CHECK" },
-            { "type": "checkpoint", "task": "FUEL SELECTORS", "action": "DESIRED TANK" },
+            {
+              "type": "checkpoint",
+              "task": "FUEL QUANTITY",
+              "action": "CHECK"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL SELECTORS",
+              "action": "DESIRED TANK"
+            },
             { "type": "checkpoint", "task": "MIXTURE", "action": "AS REQ" },
             { "type": "checkpoint", "task": "THROTTLE", "action": "2000 RPM" },
-            { "type": "checkpoint", "task": "ENGINE INSTRUMENTS", "action": "CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE INSTRUMENTS",
+              "action": "CHECK"
+            },
             { "type": "checkpoint", "task": "MAGNETOS", "action": "CHECK" },
             { "type": "checkpoint", "task": "CARB HEAT", "action": "CHECK" },
             { "type": "checkpoint", "task": "PROP", "action": "CYCLE X3" }
@@ -966,21 +2038,45 @@
         {
           "categoryName": "BEFORE TAKEOFF",
           "items": [
-            { "type": "checkpoint", "task": "CONTROLS", "action": "FREE & CORRECT" },
+            {
+              "type": "checkpoint",
+              "task": "CONTROLS",
+              "action": "FREE & CORRECT"
+            },
             { "type": "checkpoint", "task": "DOOR", "action": "LATCHED" },
-            { "type": "checkpoint", "task": "ELEVATOR TRIM", "action": "NEUTRAL" },
+            {
+              "type": "checkpoint",
+              "task": "ELEVATOR TRIM",
+              "action": "NEUTRAL"
+            },
             { "type": "checkpoint", "task": "RUDDER TRIM", "action": "AS REQ" },
             { "type": "checkpoint", "task": "FLAPS", "action": "AS DESIRED" },
-            { "type": "checkpoint", "task": "FUEL SELECTORS", "action": "DESIRED TANK" },
+            {
+              "type": "checkpoint",
+              "task": "FUEL SELECTORS",
+              "action": "DESIRED TANK"
+            },
             { "type": "checkpoint", "task": "FUEL PUMP", "action": "ON" },
             { "type": "checkpoint", "task": "PROP", "action": "FULL FORWARD" },
             { "type": "checkpoint", "task": "CARB HEAT", "action": "OFF" },
-            { "type": "checkpoint", "task": "ENGINE GAUGES", "action": "CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE GAUGES",
+              "action": "CHECK"
+            },
             { "type": "checkpoint", "task": "PILOT HEAT", "action": "AS REQ" },
             { "type": "checkpoint", "task": "STROBES", "action": "ON" },
-            { "type": "checkpoint", "task": "LANDING LIGHTS", "action": "AS REQ" },
+            {
+              "type": "checkpoint",
+              "task": "LANDING LIGHTS",
+              "action": "AS REQ"
+            },
             { "type": "checkpoint", "task": "MIXTURE", "action": "FULL RICH" },
-            { "type": "checkpoint", "task": "ENGINE OUT ON TAKEOFF", "action": "BRIEF" }
+            {
+              "type": "checkpoint",
+              "task": "ENGINE OUT ON TAKEOFF",
+              "action": "BRIEF"
+            }
           ]
         },
         {
@@ -988,21 +2084,49 @@
           "items": [
             { "type": "checkpoint", "task": "STOPWATCH", "action": "START" },
             { "type": "checkpoint", "task": "THROTTLE", "action": "FULL OPEN" },
-            { "type": "checkpoint", "task": "AIRSPEED INDICATOR", "action": "ALIVE" },
-            { "type": "checkpoint", "task": "ENGINE GAUGES", "action": "CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "AIRSPEED INDICATOR",
+              "action": "ALIVE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "ENGINE GAUGES",
+              "action": "CHECK"
+            },
             { "type": "checkpoint", "task": "ROTATE", "action": "85 MPH" },
-            { "type": "checkpoint", "task": "POSITIVE CLIMB", "action": "VERIFY" },
+            {
+              "type": "checkpoint",
+              "task": "POSITIVE CLIMB",
+              "action": "VERIFY"
+            },
             { "type": "checkpoint", "task": "GEAR", "action": "UP" },
             { "type": "checkpoint", "task": "FLAPS", "action": "UP" },
-            { "type": "checkpoint", "task": "AIRSPEED", "action": "VY 105 MPH" },
-            { "type": "checkpoint", "task": "EMERGENCY LANDING AREA", "action": "VERIFY" }
+            {
+              "type": "checkpoint",
+              "task": "AIRSPEED",
+              "action": "VY 105 MPH"
+            },
+            {
+              "type": "checkpoint",
+              "task": "EMERGENCY LANDING AREA",
+              "action": "VERIFY"
+            }
           ]
         },
         {
           "categoryName": "CLIMB",
           "items": [
-            { "type": "checkpoint", "task": "FUEL PUMP", "action": "OFF @ 1000FT AGL" },
-            { "type": "checkpoint", "task": "POWER", "action": "DO NOT REDUCE UNTIL 1000FT AGL" },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PUMP",
+              "action": "OFF @ 1000FT AGL"
+            },
+            {
+              "type": "checkpoint",
+              "task": "POWER",
+              "action": "DO NOT REDUCE UNTIL 1000FT AGL"
+            },
             { "type": "checkpoint", "task": "CHT", "action": "CHECK" },
             { "type": "checkpoint", "task": "MIXTURE", "action": "LEAN AS REQ" }
           ]
@@ -1012,26 +2136,50 @@
           "items": [
             { "type": "checkpoint", "task": "THROTTLE", "action": "SET" },
             { "type": "checkpoint", "task": "PROP", "action": "SET" },
-            { "type": "checkpoint", "task": "MIXTURE", "action": "LEAN AS REQ" },
-            { "type": "checkpoint", "task": "FUEL PUMP", "action": "VERIFY OFF" },
-            { "type": "checkpoint", "task": "FUEL PRESSURE", "action": "CHECK" },
+            {
+              "type": "checkpoint",
+              "task": "MIXTURE",
+              "action": "LEAN AS REQ"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PUMP",
+              "action": "VERIFY OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "FUEL PRESSURE",
+              "action": "CHECK"
+            },
             { "type": "checkpoint", "task": "ENGINE GAUGES", "action": "CHECK" }
           ]
         },
         {
           "categoryName": "APPROACH",
           "items": [
-            { "type": "checkpoint", "task": "FLAPS (<125 MPH)", "action": "AS DESIRED" },
+            {
+              "type": "checkpoint",
+              "task": "FLAPS (<125 MPH)",
+              "action": "AS DESIRED"
+            },
             { "type": "checkpoint", "task": "G.U.M.P.S.", "action": "CHECK" },
             { "type": "checkpoint", "task": "CARB HEAT", "action": "AS REQ" },
             { "type": "checkpoint", "task": "AIRSPEED", "action": "120 MPH" },
-            { "type": "checkpoint", "task": "LANDING CLEARANCE", "action": "AS REQ" }
+            {
+              "type": "checkpoint",
+              "task": "LANDING CLEARANCE",
+              "action": "AS REQ"
+            }
           ]
         },
         {
           "categoryName": "LANDING",
           "items": [
-            { "type": "checkpoint", "task": "GEAR LAMP & LEVER", "action": "GREEN & UP" },
+            {
+              "type": "checkpoint",
+              "task": "GEAR LAMP & LEVER",
+              "action": "GREEN & UP"
+            },
             { "type": "checkpoint", "task": "FLAPS", "action": "DOWN" },
             { "type": "checkpoint", "task": "AIRSPEED", "action": "90 MPH" }
           ]
@@ -1042,9 +2190,17 @@
             { "type": "checkpoint", "task": "FLAPS", "action": "UP" },
             { "type": "checkpoint", "task": "STOPWATCH", "action": "STOP" },
             { "type": "checkpoint", "task": "TRIM", "action": "NEUTRAL" },
-            { "type": "checkpoint", "task": "MIXTURE", "action": "LEAN AS REQ" },
+            {
+              "type": "checkpoint",
+              "task": "MIXTURE",
+              "action": "LEAN AS REQ"
+            },
             { "type": "checkpoint", "task": "FUEL PUMP", "action": "OFF" },
-            { "type": "checkpoint", "task": "STROBES (CLEAR OF RWY)", "action": "OFF" }
+            {
+              "type": "checkpoint",
+              "task": "STROBES (CLEAR OF RWY)",
+              "action": "OFF"
+            }
           ]
         },
         {
@@ -1053,14 +2209,34 @@
             { "type": "checkpoint", "task": "PARKING BRAKE", "action": "SET" },
             { "type": "checkpoint", "task": "RADIOS", "action": "OFF" },
             { "type": "checkpoint", "task": "TRANSPONDER", "action": "OFF" },
-            { "type": "checkpoint", "task": "AUTOPILOT MASTER", "action": "OFF" },
-            { "type": "checkpoint", "task": "AVIONICS MASTER", "action": "OFF" },
+            {
+              "type": "checkpoint",
+              "task": "AUTOPILOT MASTER",
+              "action": "OFF"
+            },
+            {
+              "type": "checkpoint",
+              "task": "AVIONICS MASTER",
+              "action": "OFF"
+            },
             { "type": "checkpoint", "task": "MASTER SWITCH", "action": "OFF" },
             { "type": "checkpoint", "task": "THROTTLE", "action": "CLOSED" },
-            { "type": "checkpoint", "task": "MIXTURE", "action": "IDLE CUTOFF" },
+            {
+              "type": "checkpoint",
+              "task": "MIXTURE",
+              "action": "IDLE CUTOFF"
+            },
             { "type": "checkpoint", "task": "ALL SWITCHES", "action": "OFF" },
-            { "type": "checkpoint", "task": "CONTROL LOCK", "action": "SECURE" },
-            { "type": "checkpoint", "task": "DOORS / WINDOWS", "action": "CLOSED" },
+            {
+              "type": "checkpoint",
+              "task": "CONTROL LOCK",
+              "action": "SECURE"
+            },
+            {
+              "type": "checkpoint",
+              "task": "DOORS / WINDOWS",
+              "action": "CLOSED"
+            },
             { "type": "checkpoint", "task": "TIE-DOWNS", "action": "SECURE" }
           ]
         }
