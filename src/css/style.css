@@ -116,6 +116,8 @@ footer {
   margin: 0 auto;
 }
 
+/**************** SITE ****************/
+
 .cardTitle {
   display: flex;
   align-items: center;
@@ -256,14 +258,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* align-items: center; */
-  /* gap: 10px; */
   background-color: var(--footer-bg);
   border-top: 2px solid var(--border-color-secondary);
-  /* color: var(--text-heading-dark); */
   font-size: 1.1rem;
   color: var(--c-absolute-black);
-  /* color: #ffffff; */
 
   .footer-info,
   .footer-date {
@@ -291,6 +289,238 @@ footer {
     img {
       width: 42px;
       height: 42px;
+    }
+  }
+}
+
+/*=========================================
+    Home.HTML
+=========================================== */
+
+/**************** MAIN ****************/
+
+.home-page {
+  h1 {
+    margin: 10px;
+    color: var(--text-heading-lighter);
+  }
+
+  .hero {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .cta {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    width: 16%;
+    min-width: 150px;
+  }
+
+  .welcomeLastflight {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    color: #ffffff;
+
+    p {
+      margin: 10px 0;
+      color: var(--text-primary);
+    }
+  }
+
+  .welcomeSection,
+  .lastflightSection {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  }
+
+  .lastflightSection {
+    .lastflightDiv {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 2fr;
+
+      .lastflightAircraft {
+        p {
+          font-weight: bold;
+          margin: 0;
+          line-height: 24px;
+        }
+
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .choose {
+    margin: 10px;
+  }
+
+  .chooseDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .buttons {
+      display: flex;
+      font-family: Doto, Arial, Helvetica, sans-serif;
+      min-width: 100px;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        font-family: Doto, Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+/*=========================================
+        *** SCREEN LARGE ***
+=========================================== */
+@media screen and (min-width: 768px) {
+  /**************** SITE ****************/
+  .cardTitle {
+    height: 44px;
+    font-size: 1.5rem;
+  }
+
+  /**************** HEADER ****************/
+  header {
+    grid-template-columns: 60px auto auto;
+
+    img {
+      margin: 5px 0 5px 20px;
+    }
+
+    span {
+      margin: 5px 0 5px 25px;
+    }
+  }
+
+  /**************** HAMBURGER ****************/
+  .hamburger {
+    display: none;
+  }
+
+  /**************** NAVIGATION ****************/
+  .navigation {
+    display: block;
+    background-color: transparent;
+    justify-items: right;
+    width: 100%;
+    border-top: transparent;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    ul {
+      display: flex;
+      margin-right: 20px;
+      gap: 20px;
+    }
+
+    li {
+      min-width: 100px;
+      background-color: var(--nav-bg);
+      width: 130px;
+    }
+
+    a {
+      text-align: center;
+
+      &:hover {
+        background-color: var(--nav-hover);
+        color: var(--nav-text);
+      }
+    }
+  }
+
+  /**************** FOOTER ****************/
+  footer {
+    flex-direction: row;
+    padding: 0 20px;
+
+    /* REVIEW THIS */
+    /* .footer-info, .footer-date {
+          justify-content: left;
+        } */
+
+    .footer-info {
+      flex: 1;
+      justify-content: left;
+    }
+
+    .footer-date {
+      flex: 1;
+      justify-content: right;
+    }
+  }
+
+  /*=========================================
+        Home.HTML
+    =========================================== */
+
+  /**************** MAIN ****************/
+
+  .home-page {
+    h1 {
+      margin: 20px;
+    }
+
+    .cta {
+      right: 20px;
+      bottom: 20px;
+    }
+
+    .hero {
+      img {
+        width: 100%;
+      }
+    }
+
+    .welcomeLastflight {
+      margin: 20px;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .choose {
+      margin: 20px;
+
+      .chooseDiv {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .buttons {
+          width: 48.25%;
+
+          p {
+            /* font-family: Doto, Arial, Helvetica, sans-serif; */
+            font-weight: 700;
+            font-size: 1.5rem;
+          }
+        }
+      }
     }
   }
 }
