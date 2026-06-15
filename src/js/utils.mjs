@@ -14,12 +14,12 @@ async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter() {
-  const headerTemplate = await loadTemplate('partials/header.html');
+  const headerTemplate = await loadTemplate('/partials/header.html');
   const headerElement = document.getElementById('main-header');
   renderWithTemplate(headerTemplate, headerElement);
   //   updateCartCountBadge();
 
-  const footerTemplate = await loadTemplate('partials/footer.html');
+  const footerTemplate = await loadTemplate('/partials/footer.html');
   const footerElement = document.getElementById('main-footer');
   renderWithTemplate(footerTemplate, footerElement);
 }

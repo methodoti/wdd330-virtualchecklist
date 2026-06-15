@@ -9,6 +9,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
+        checklist: resolve(__dirname, 'src/checklist/index.html'),
         // add new pages as needed here!
       },
     },
