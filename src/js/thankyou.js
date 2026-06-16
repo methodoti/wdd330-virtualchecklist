@@ -5,7 +5,7 @@ loadHeaderFooter();
 
 // Get the URL query string
 const getString = window.location.search;
-console.log(getString);
+//console.log(getString);
 
 const myInfo = new URLSearchParams(getString);
 
@@ -45,7 +45,7 @@ if (getString !== '') {
     const developer = cleanFields['developer'];
     let currentDate = cleanFields['timestamp'];
 
-    let formatedDate = '';
+    let formatedDate;
 
     // Handle the date formatting
     if (cleanFields['timestamp'] !== 'N/A') {
