@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'src/index.html'),
         checklist: resolve(__dirname, 'src/checklist/index.html'),
+        add_aircraft: resolve(__dirname, 'src/add_aircraft/index.html'),
         // add new pages as needed here!
       },
     },

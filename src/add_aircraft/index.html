@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add Aircraft | Virtual Checklist</title>
+    <meta
+      name="description"
+      content="Can't find your favorite plane? Use this form to request a new aircraft for the Virtual Checklist database."
+    />
+    <meta name="author" content="Marcelo Severo Patricio" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Kode+Mono:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=flight"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="module" src="/js/add_aircraft.js"></script>
+  </head>
+  <body>
+    <!-- ======== HEADER ======== -->
+    <header id="main-header"></header>
+    <main class="add-aircraft-page">
+      <h1>Add Aircraft</h1>
+      <div class="addAircraft">
+        <!-- <section class="welcomeSection"> -->
+        <section class="requestSection">
+          <h2 class="cardTitle">Checklist Request</h2>
+          <!-- <div class="welcomeDiv cards"> -->
+          <div class="requestDiv cards">
+            <p>
+              Fill out the form and ask for Aircraft Virtual Checklist addition.
+            </p>
+            <p>
+              You will be informed by email as soon the checklist is uploaded.
+            </p>
+            <p>Please, take into consideration the demand.</p>
+          </div>
+        </section>
+        <!-- FORM SECTION -->
+        <section class="form-section">
+          <!-- <h2>Membership Application Form</h2> -->
+          <form action="thankyou.html" method="get" class="request-form">
+            <label
+              >First Name
+              <input
+                type="text"
+                name="first-name"
+                required
+                autocomplete="given-name"
+                title="Your First Name"
+            /></label>
+            <label
+              >Last Name
+              <input
+                type="text"
+                name="last-name"
+                required
+                autocomplete="family-name"
+                title="Your Last Name"
+            /></label>
+            <!-- <label>Organization Title <input type="text" name="organization-title" autocomplete="organization-title" title="Minimum 7 characters. Only letters, spaces, and hyphens allowed." pattern="[A-Za-z \-]{7,}"></label> -->
+            <label
+              >Email
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="e.g.: name@email.com"
+                title="Your Email"
+                autocomplete="email"
+            /></label>
+            <label
+              >Aircraft
+              <input
+                type="text"
+                name="aircraft"
+                required
+                title="A Aircraft Model"
+                placeholder="e.g.: Boeing 737-800"
+            /></label>
+            <label
+              >Developer
+              <input
+                type="text"
+                name="developer"
+                required
+                autocomplete="organization"
+                title="The Name of the Aircraft's Developer"
+                placeholder="e.g.: PMDG"
+            /></label>
+
+            <label
+              >Additional Information
+              <textarea
+                name="information"
+                rows="4"
+                title="Add additional information or questions"
+              ></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp" />
+            <div>
+              <input
+                class="buttons buttonsRounded"
+                type="submit"
+                value="Send your wish..."
+              />
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer id="main-footer"></footer>
+  </body>
+</html>
