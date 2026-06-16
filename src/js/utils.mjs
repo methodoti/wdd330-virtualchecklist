@@ -33,25 +33,35 @@ export async function loadHeaderFooter() {
   currentYearSpan.textContent = new Date().getFullYear();
   const lastModified = document.lastModified;
   lastModifiedSpan.textContent = lastModified;
-}
 
+  // setMenuCurrent();
+}
 function setMenuCurrent() {
   // Finds URL from the current user page
   const currentPage = window.location.pathname;
+  // console.log('current page: '+currentPage);
   // Finds all <a> tag from the newly created menu (The DOM is updated and renderized at this point!)
   const menuLinks = document.querySelectorAll('#nav-bar ul li a');
   menuLinks.forEach((link) => {
     // console.log(link.parentElement);
     // Get the href from each link (eg.: '/checklist/index.html')
     const linkPage = link.getAttribute('href');
-    // If the current page = link
-    if (currentPage === linkPage) {
-      // add the 'current' class to the PARENT (<li>) of the element <a> of the current link from the menuLinks array.
-      link.parentElement.classList.add('current');
-    } else if (
-      currentPage === '/add_aircraft/thankyou.html' &&
-      linkPage === '/add_aircraft/index.html'
-    ) {
+    // console.log('link page: ' + linkPage);
+
+    // if its / or /indes.html = main home page
+    const isHomeContext =
+      (currentPage === '/' || currentPage === '/index.html') &&
+      linkPage === '/index.html';
+    // console.log(isHomeContext);
+    // if its /checklist/ or /checlist/index.html = checklist home page
+    const isChecklistContext =
+      currentPage.includes('/checklist/') && linkPage.includes('/checklist/');
+    // if its /add_aircraft/ or /add_aircraft/index.html = add aircraft home page
+    const isAddAircraftContext =
+      currentPage.includes('/add_aircraft/') &&
+      linkPage.includes('/add_aircraft/');
+
+    if (isHomeContext || isChecklistContext || isAddAircraftContext) {
       // add the 'current' class to Add Aricraft on thankyou page.
       link.parentElement.classList.add('current');
     } else {
