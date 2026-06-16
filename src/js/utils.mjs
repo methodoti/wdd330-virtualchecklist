@@ -25,6 +25,14 @@ export async function loadHeaderFooter() {
   const footerTemplate = await loadTemplate('/partials/footer.html');
   const footerElement = document.getElementById('main-footer');
   renderWithTemplate(footerTemplate, footerElement);
+
+  // add currentYear and lastModified to footer
+  const currentYearSpan = document.querySelector('#currentyear');
+  const lastModifiedSpan = document.querySelector('#lastModified');
+  const currentYear = new Date().getFullYear();
+  currentYearSpan.textContent = new Date().getFullYear();
+  const lastModified = document.lastModified;
+  lastModifiedSpan.textContent = lastModified;
 }
 
 function setMenuCurrent() {
@@ -39,6 +47,12 @@ function setMenuCurrent() {
     // If the current page = link
     if (currentPage === linkPage) {
       // add the 'current' class to the PARENT (<li>) of the element <a> of the current link from the menuLinks array.
+      link.parentElement.classList.add('current');
+    } else if (
+      currentPage === '/add_aircraft/thankyou.html' &&
+      linkPage === '/add_aircraft/index.html'
+    ) {
+      // add the 'current' class to Add Aricraft on thankyou page.
       link.parentElement.classList.add('current');
     } else {
       // If not, clean the 'current' class

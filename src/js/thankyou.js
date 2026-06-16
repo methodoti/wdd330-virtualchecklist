@@ -29,6 +29,8 @@ if (getString !== '') {
   const checkInfo2 = (fields) => {
     // Loop through our list of expected fields
     fields.forEach((field) => {
+      // console.log(field);
+      // console.log(myInfo.get(field));
       // If the field exists in the URL and is not empty
       if (myInfo.get(field)) {
         cleanFields[field] = myInfo.get(field); // Save the valid data
