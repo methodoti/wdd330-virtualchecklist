@@ -20,22 +20,25 @@ export async function loadHeaderFooter() {
   const headerTemplate = await loadTemplate('/partials/header.html');
   const headerElement = document.getElementById('main-header');
   // Passes the callback function setMenuCurrent (without parenteses for not running it now)
-  renderWithTemplate(headerTemplate, headerElement, null, setMenuCurrent);
+  renderWithTemplate(headerTemplate, headerElement, null, initHeader);
 
   const footerTemplate = await loadTemplate('/partials/footer.html');
   const footerElement = document.getElementById('main-footer');
-  renderWithTemplate(footerTemplate, footerElement);
-
-  // add currentYear and lastModified to footer
-  const currentYearSpan = document.querySelector('#currentyear');
-  const lastModifiedSpan = document.querySelector('#lastModified');
-  const currentYear = new Date().getFullYear();
-  currentYearSpan.textContent = new Date().getFullYear();
-  const lastModified = document.lastModified;
-  lastModifiedSpan.textContent = lastModified;
-
-  // setMenuCurrent();
+  renderWithTemplate(footerTemplate, footerElement, null, initFooter);
 }
+
+// init header functions: the right async way.  Place it on the renderWithTemplate()
+function initHeader() {
+  setMenuCurrent();
+  menuHamburguer();
+}
+
+// init footer functions: the right async way. Place it on the renderWithTemplate()
+function initFooter() {
+  footerDates();
+}
+
+// Put the little airplane on the current menu
 function setMenuCurrent() {
   // Finds URL from the current user page
   const currentPage = window.location.pathname;
@@ -69,4 +72,25 @@ function setMenuCurrent() {
       link.parentElement.classList.remove('current');
     }
   });
+}
+
+// initiate the menu hamburger
+function menuHamburguer() {
+  const navButton = document.querySelector('#nav-button');
+  const navBar = document.querySelector('#nav-bar');
+
+  navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
+  });
+}
+
+// add currentYear and lastModified to footer
+function footerDates() {
+  const currentYearSpan = document.querySelector('#currentyear');
+  const lastModifiedSpan = document.querySelector('#lastModified');
+  const currentYear = new Date().getFullYear();
+  currentYearSpan.textContent = new Date().getFullYear();
+  const lastModified = document.lastModified;
+  lastModifiedSpan.textContent = lastModified;
 }
