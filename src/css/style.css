@@ -412,16 +412,41 @@ footer {
 
   & > label {
     margin-left: 10px;
+    font-family: Roboto, Helvetica, sans-serif;
+    display: block;
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    color: var(--text-primary);
+
+    #select-aircraft {
+      width: 220px;
+      text-align: left;
+      border: 0;
+      border-right-width: 0;
+      font-family: sans-serif;
+      font-weight: bold;
+      /* from select */
+      font-size: 1rem;
+      border-radius: 4px;
+      margin: 0.1rem 0 1rem 0;
+      padding: 0.3rem;
+      display: block;
+    }
   }
 
-  #select-aircraft {
+  /* #select-aircraft {
     width: 220px;
     text-align: left;
     border: 0;
     border-right-width: 0;
     font-family: sans-serif;
-    font-weight: bold;
-  }
+    font-weight: bold; */
+  /* from select */
+  /* border-radius: 4px;
+    margin: 0.1rem 0 1rem 0;
+    padding: 0.3rem;
+    display: block;
+  }  */
 
   .chekclistMainDiv {
     margin: 10px;
@@ -729,7 +754,7 @@ footer {
 }
 
 /*=========================================
-        *** SCREEN LARGE ***
+        *** LARGE SCREEN  ***
 =========================================== */
 @media screen and (min-width: 768px) {
   /**************** SITE ****************/
