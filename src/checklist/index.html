@@ -41,7 +41,79 @@
       >
 
       <div class="chekclistMainDiv">
-        <div id="category-section" class="categorySection"></div>
+        <div id="category-section" class="categorySection">
+          <!--</div>-->
+          <!-- A MÁGICA COMEÇA AQUI, ESTA É A DIV ALVO, A PARTIR DAQUI, SERÁ GERADO DINAMICAMENTE -->
+
+          <!-- ======= CHECKLIST CATEGORY (exemplo, tudo isto vai sumir para ser preenchido dinamicamente) =========== -->
+          <h2 class="aircraftName"></h2>
+
+          <button class="resetAll buttons buttonsRounded">Reset All</button>
+
+          <div
+            id="category-title"
+            class="categoryTitleDiv cardTitle"
+            aria-label="open and close"
+          >
+            <h3 class="cardTitle">Pre Flight</h3>
+            <span id="category-button" class="categoryButton"></span>
+          </div>
+
+          <div id="checklist-div" class="checklistDiv cards show">
+            <div class="checklistItem type-checkpoint">
+              <div class="check">
+                <div class="checkIcon checked"></div>
+              </div>
+              <div class="item type-checkpoint checked">
+                <span class="task">BATERY</span>
+                <div class="dot checked"></div>
+                <span class="action">GUARD CLOSED</span>
+              </div>
+            </div>
+
+            <div class="checklistItem type-checkpoint">
+              <div class="check">
+                <div class="checkIcon"></div>
+              </div>
+              <div class="item type-checkpoint">
+                <span class="task">RTE PAGE 1/2</span>
+                <div class="dot"></div>
+                <span class="action">SET</span>
+              </div>
+            </div>
+
+            <div class="checklistItem type-info">
+              <div class="check">
+                <div class="checkIcon"></div>
+              </div>
+              <div class="item type-info">
+                <span class="task">ORIGIN AND DEST</span>
+                <div class="dot"></div>
+                <span class="action">SET</span>
+              </div>
+            </div>
+
+            <div class="checklistItem type-subtitle">
+              <div class="item type-subtitle">
+                <span class="task">Passing Ta (Transition-Altitude)</span>
+              </div>
+            </div>
+
+            <div class="checklistItem type-sim-action">
+              <div class="check">
+                <div class="checkIcon"></div>
+              </div>
+              <div class="item type-sim-action">
+                <span class="task">(PREFLIGHT CHECKLIST)</span>
+              </div>
+            </div>
+            <div class="resetDiv">
+              <button class="reset buttons buttonsRounded">Reset</button>
+            </div>
+          </div>
+          <button class="resetAll buttons buttonsRounded">Reset All</button>
+          <!-- ======= fim da CHECKLIST CATEGORY =========== -->
+        </div>
       </div>
     </main>
 

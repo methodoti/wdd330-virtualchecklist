@@ -393,6 +393,221 @@ footer {
 }
 
 /*=========================================
+    Checklist.HTML
+=========================================== */
+
+/**************** MAIN ****************/
+
+.checklist-page {
+  h1 {
+    margin: 10px;
+    color: var(--text-heading-lighter);
+  }
+
+  h2 {
+    margin: 10px;
+    color: var(--text-heading-lighter);
+    text-align: center;
+  }
+
+  & > label {
+    margin-left: 10px;
+  }
+
+  #select-aircraft {
+    width: 220px;
+    text-align: left;
+    border: 0;
+    border-right-width: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+  .chekclistMainDiv {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 10px; */
+  }
+
+  .categorySection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resetAll {
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    min-width: 250px;
+    width: 90%;
+    max-width: 350px;
+    margin: 10px 10px 0px 10px;
+    align-self: center;
+  }
+
+  .categoryTitleDiv {
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    padding: 0 10px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    h3 {
+      padding: 0;
+    }
+  }
+
+  /* ---- BUTTON Up/Down ---- */
+  .categoryButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.7rem;
+
+    &::before {
+      font-family: 'Material Symbols Outlined';
+      content: '\e313';
+    }
+
+    &.show::before {
+      content: '\e316';
+    }
+  }
+
+  .checklistDiv {
+    display: none;
+    padding: 10px;
+
+    &.show {
+      display: block;
+    }
+
+    /*============= CHECKLIST ITEMS ============= */
+
+    .checklistItem {
+      height: 44px;
+      display: grid;
+      grid-template-columns: 14px 1fr;
+      cursor: pointer;
+      align-items: center;
+
+      &.type-subtitle {
+        grid-template-columns: 1fr;
+      }
+
+      .check {
+        border: 1px solid var(--cl-checkpoint);
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+
+        .checkIcon {
+          background: none;
+          border: none;
+          padding: 0;
+          margin: 0;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          height: 4px;
+          width: 4px;
+          color: var(--cl-success);
+          background-color: var(--cl-success);
+
+          &.checked {
+            display: flex;
+          }
+        }
+      }
+
+      .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-family: Doto, Arial, Helvetica, sans-serif;
+        color: var(--cl-checkpoint);
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        &.checked {
+          color: var(--cl-success);
+        }
+
+        .action {
+          text-align: left;
+        }
+
+        &.type-subtitle {
+          justify-content: center;
+          color: var(--cl-subtitle);
+          font-weight: 600;
+          cursor: default;
+        }
+
+        &.type-atc {
+          color: var(--cl-atc);
+        }
+
+        &.type-sim-action {
+          justify-content: center;
+          transform: translateX(-7px);
+          color: var(--cl-sim-action);
+          font-weight: 800;
+        }
+
+        &.type-info {
+          margin: 0 5px;
+          color: var(--cl-info);
+
+          div {
+            border: 1px dashed var(--cl-info);
+          }
+        }
+      }
+
+      .dot {
+        font-family: Helvetica;
+        height: 0;
+        border: 1px dashed var(--cl-checkpoint);
+        flex-grow: 1;
+        margin: 10px 5px 0 5px;
+
+        &.checked {
+          border: 1px dashed var(--cl-success);
+        }
+      }
+    }
+
+    .resetDiv {
+      display: flex;
+      justify-content: center;
+    }
+
+    .reset {
+      border: none;
+      font-family: sans-serif;
+      font-weight: bold;
+      width: 200px;
+      margin-top: 10px;
+    }
+  }
+}
+
+/*=========================================
         *** SCREEN LARGE ***
 =========================================== */
 @media screen and (min-width: 768px) {
@@ -518,6 +733,101 @@ footer {
             /* font-family: Doto, Arial, Helvetica, sans-serif; */
             font-weight: 700;
             font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  /*=========================================
+      Checklist.HTML
+  =========================================== */
+
+  /**************** MAIN ****************/
+
+  .checklist-page {
+    h1 {
+      margin: 20px;
+    }
+
+    h2 {
+      margin: 20px;
+    }
+
+    & > label {
+      margin-left: 20px;
+    }
+
+    .chekclistMainDiv {
+      margin: 20px auto;
+      max-width: 1000px;
+      /* gap: 20px; */
+    }
+
+    .resetAll {
+      margin: 15px 15px 0 15px;
+    }
+
+    .categoryTitleDiv {
+      display: grid;
+      grid-template-columns: 1fr 29px;
+      padding: 0 20px;
+      margin-top: 15px;
+    }
+
+    /* ---- BUTTON ---- */
+    .categoryButton {
+      height: 29px;
+      width: 29px;
+      padding: 0;
+      margin: 0;
+      color: var(--text-primary);
+      font-size: 2rem;
+    }
+
+    .checklistDiv {
+      padding: 20px;
+
+      /*============= CHECKLIST ITEMS ============= */
+
+      .checklistItem {
+        grid-template-columns: 58px 1fr;
+
+        .check {
+          border: 2px solid var(--cl-checkpoint);
+          width: 38px;
+          height: 38px;
+
+          .checkIcon {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 38px;
+            width: 38px;
+            color: var(--cl-success);
+            font-size: 3rem;
+
+            &.checked::before {
+              font-family: 'Material Symbols Outlined';
+              content: '\e5ca';
+            }
+          }
+        }
+
+        .item {
+          font-size: 1.1rem;
+          font-weight: 600;
+
+          &.type-info {
+            margin: 0 20px;
+          }
+
+          &.type-sim-action {
+            transform: translateX(-29px);
           }
         }
       }
