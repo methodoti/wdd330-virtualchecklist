@@ -111,3 +111,43 @@ function footerDates() {
   const lastModified = document.lastModified;
   lastModifiedSpan.textContent = lastModified;
 }
+
+export function getParam(param) {
+  // get the string
+  const getString = window.location.search;
+  // console.log(getString);
+  const myInfo = new URLSearchParams(getString);
+  // console.log(myInfo);
+
+  const fields = param;
+  // console.log('console1 fields: '+fields);
+
+  // Object to store the clean and validated data
+  let cleanFields = {};
+
+  // Check if the URL has any parameters (if it's not empty)
+  if (getString !== '') {
+    // Function to validate and clean the data
+    // const checkInfo2 = (fields) => {
+    // Loop through our list of expected fields
+    fields.forEach((field) => {
+      // console.log(field);
+      // console.log(myInfo.get(field));
+      // If the field exists in the URL and is not empty
+      // console.log('console2 field: '+field);
+      if (myInfo.get(field)) {
+        cleanFields[field] = myInfo.get(field); // Save the valid data
+      } else {
+        cleanFields[field] = 'N/A'; // Save "N/A" for empty or missing fields
+      }
+    });
+
+    // };
+    // console.log('console3 cleanField: '+cleanFields);
+    return cleanFields;
+  }
+  // else {
+  //   console.log('No data received.');
+  //   return cleanFields;
+  // };
+}
