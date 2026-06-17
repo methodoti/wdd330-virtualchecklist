@@ -10,6 +10,23 @@ export function renderWithTemplate(template, parentElement, data, callback) {
   }
 }
 
+export function renderListWithTemplate(
+  templateFn,
+  parentElement,
+  list,
+  position = 'afterbegin',
+  clear = false,
+) {
+  // If need to clear, clean the parent HTML first
+  if (clear) {
+    parentElement.innerHTML = '';
+  }
+  // pass the list template, using map
+  const htmlStrings = list.map(templateFn);
+  // insert on DOM in the choosed position
+  parentElement.insertAdjacentHTML(position, htmlStrings.join(''));
+}
+
 async function loadTemplate(path) {
   const response = await fetch(path);
   const template = await response.text();
