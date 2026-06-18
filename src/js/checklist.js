@@ -1,6 +1,6 @@
 import getChecklistData from './AircraftData.mjs';
 import { displayChecklist } from './ChecklistRender.mjs';
-import { loadHeaderFooter, getParam } from './utils.mjs';
+import { loadHeaderFooter, virtualChecklistState, saveState, getParam, registerLastFlight } from './utils.mjs';
 
 // load header and footer
 loadHeaderFooter();
@@ -26,7 +26,12 @@ const categorySection = document.querySelector('#category-section');
 // for the aircraft data global
 let allAircraftData = [];
 
-function addChecklistListeners() {
+function addChecklistListeners(plane) {
+    // LOCAL STORAGE 
+    console.log('addChecklistListeners ' + plane);
+    const aircraftId = plane.aircraftId;
+    console.log(aircraftId);
+    // let currentState = getAircraftState(aircraftId);
   // ============================================
   // 1. Open/Close Categoris
   // ============================================
@@ -37,7 +42,12 @@ function addChecklistListeners() {
       const divChecklistDiv = titulo.nextElementSibling;
 
       span.classList.toggle('show');
-      divChecklistDiv.classList.toggle('show');
+        divChecklistDiv.classList.toggle('show');
+        
+       // LOCAL STORAGE 
+      virtualChecklistState[titulo.dataset.id] = divChecklistDiv.classList.contains('show');
+      saveState();
+        
     });
   });
 
@@ -53,7 +63,16 @@ function addChecklistListeners() {
       if (checkIcon) checkIcon.classList.toggle('checked');
 
       const dot = item.querySelector('.dot');
-      if (dot) dot.classList.toggle('checked');
+        if (dot) dot.classList.toggle('checked');
+        
+       // LOCAL STORAGE  
+        virtualChecklistState[item.dataset.id] = item.classList.contains('checked');
+        saveState();
+        
+        // LOCAL STORAGE - LAST FLIGHT
+        if (item.classList.contains('checked')) {
+            registerLastFlight(plane);
+        }
     });
   });
 
@@ -65,9 +84,19 @@ function addChecklistListeners() {
     button.addEventListener('click', () => {
       const categorySection = document.querySelector('#category-section');
       const checkedElements = categorySection.querySelectorAll('.checked');
+    
       checkedElements.forEach((element) => {
         element.classList.remove('checked');
       });
+        // LOCAL STORAGE
+        Object.keys(virtualChecklistState).forEach(key => {
+          
+          if(key.startsWith(aircraftId)) {
+              delete virtualChecklistState[key];
+          }
+      });
+        saveState();
+        
     });
   });
 
@@ -80,11 +109,55 @@ function addChecklistListeners() {
       const divChecklistDiv = button.closest('.checklistDiv');
       const checkedElements = divChecklistDiv.querySelectorAll('.checked');
       checkedElements.forEach((element) => {
-        element.classList.remove('checked');
+          element.classList.remove('checked');
+          
+       
+          
+           // LOCAL STORAGE
+          virtualChecklistState[element.dataset.id] = false;
+            
       });
+        
+        // LOCAL STORAGE
+        saveState();
+        
+
     });
   });
 }
+
+// LOCAL STORAGE 
+function restoreChecklistState() {
+  // Restore Items (checked)
+  const checklistItems = document.querySelectorAll('.checklistItem');
+  checklistItems.forEach((item) => {
+    const id = item.dataset.id;
+
+    if (virtualChecklistState[id] === true) {
+      item.classList.add('checked');
+      const checkIcon = item.querySelector('.checkIcon');
+      if (checkIcon) checkIcon.classList.add('checked');
+      const dot = item.querySelector('.dot');
+      if (dot) dot.classList.add('checked');
+    }
+  });
+
+    // LOCAL STORAGE 
+  // Restore Categories (show)
+  const categoryTitles = document.querySelectorAll('.categoryTitleDiv');
+  categoryTitles.forEach((titulo) => {
+    const id = titulo.dataset.id;
+    
+    if (virtualChecklistState[id] === true) {
+      const span = titulo.querySelector('.categoryButton');
+      const divChecklistDiv = titulo.nextElementSibling;
+
+      span.classList.add('show');
+      divChecklistDiv.classList.add('show');
+    }
+  });
+}
+
 
 aircraftSelector.addEventListener('change', function () {
   const aircraftSelected = this.value;
@@ -102,10 +175,16 @@ aircraftSelector.addEventListener('change', function () {
     // console.log(plane);
 
     // ********************************************
-    // CALL DISPLAY CHECKLIT
+    // CALL DISPLAY CHECKLIST
     // ********************************************
     displayChecklist(plane, categorySection);
-    addChecklistListeners();
+    //   console.log('CALL DISPLAY CHECKLIST ' + plane);
+    //   addChecklistListeners(aircraftSelected);
+      addChecklistListeners(plane);
+    //   console.log('CALL DISPLAY CHECKLIST ' + aircraftSelected);
+
+      // LOCAL STORAGE
+      restoreChecklistState();
 
     document.title = `${plane.aircraftName} | Virtual Checklist | `;
   } else {

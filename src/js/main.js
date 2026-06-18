@@ -6,6 +6,7 @@ import {
   renderListWithTemplate,
   renderWithTemplate,
   loadHeaderFooter,
+  getLastFlight,
 } from './utils.mjs';
 
 // load header and footer
@@ -44,7 +45,10 @@ function lastFlightTemplate(flightData) {
 }
 
 function displayLastFlight() {
-  const lastFlightData = JSON.parse(localStorage.getItem('lastFlight'));
+  // const lastFlightData = JSON.parse(localStorage.getItem('lastFlight'));
+  const lastFlightData = getLastFlight();
+  // console.log(lastFlightData);
+
   // console.log(lastFlightData);
   const lastFlightDiv = document.querySelector('.lastflightDiv');
 

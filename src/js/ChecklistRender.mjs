@@ -26,19 +26,19 @@ function resetButtonTemplate() {
   `;
 }
 
-function categoryTitleTemplate(category) {
+function categoryTitleTemplate(categoryName, aircraftId) {
   return `
-    <div class="categoryTitleDiv cardTitle" aria-label="${category}">
-      <h3 class="cardTitle">${category}</h3>
+    <div class="categoryTitleDiv cardTitle" aria-label="${categoryName}" data-id="${aircraftId}-tab-${categoryName}">
+      <h3 class="cardTitle">${categoryName}</h3>
       <span class="categoryButton"></span>
     </div>
   `;
 }
 
 // case Checkpoint
-function checkpointTemplate(item) {
+function checkpointTemplate(item, categoryName, aircraftId) {
   return `
-    <div class="checklistItem type-checkpoint">
+    <div class="checklistItem type-checkpoint" data-id="${aircraftId}-${categoryName}-${item.task}">
         <div class="check">
           <div class="checkIcon"></div>
         </div>
@@ -51,9 +51,9 @@ function checkpointTemplate(item) {
 }
 
 // case Info
-function infoTemplate(item) {
+function infoTemplate(item, categoryName, aircraftId) {
   return `
-    <div class="checklistItem type-info">
+    <div class="checklistItem type-info" data-id="${aircraftId}-${categoryName}-${item.task}">
       <div class="check">
         <div class="checkIcon"></div>
       </div>
@@ -66,9 +66,9 @@ function infoTemplate(item) {
 }
 
 // Case Subtitle
-function subtitleTemplate(item) {
+function subtitleTemplate(item, categoryName, aircraftId) {
   return `
-    <div class="checklistItem type-subtitle">
+    <div class="checklistItem type-subtitle" data-id="${aircraftId}-${categoryName}-${item.task}">
         <div class="item type-subtitle">
             <span class="task">${item.text}</span>
         </div>
@@ -76,9 +76,9 @@ function subtitleTemplate(item) {
 }
 
 // Case SimAction
-function simActionTemplate(item) {
+function simActionTemplate(item, categoryName, aircraftId) {
   return `
-    <div class="checklistItem type-sim-action">
+    <div class="checklistItem type-sim-action" data-id="${aircraftId}-${categoryName}-${item.task}">
       <div class="check">
         <div class="checkIcon"></div>
       </div>
@@ -89,9 +89,9 @@ function simActionTemplate(item) {
 }
 
 // Case ATC
-function AtcTemplate(item) {
+function AtcTemplate(item, categoryName, aircraftId) {
   return `
-    <div class="checklistItem type-checkpoint">
+    <div class="checklistItem type-checkpoint" data-id="${aircraftId}-${categoryName}-${item.task}">
       <div class="check">
         <div class="checkIcon"></div>
       </div>
@@ -103,20 +103,20 @@ function AtcTemplate(item) {
     </div>`;
 }
 
-function itemRender(item) {
+function itemRender(item, categoryName, aircraftId) {
   switch (item.type) {
     case 'checkpoint':
-      return checkpointTemplate(item);
+      return checkpointTemplate(item, categoryName, aircraftId);
     case 'info':
-      return infoTemplate(item);
+      return infoTemplate(item, categoryName, aircraftId);
     case 'subtitle':
-      return subtitleTemplate(item);
+      return subtitleTemplate(item, categoryName, aircraftId);
     case 'sim-action':
-      return simActionTemplate(item);
+      return simActionTemplate(item, categoryName, aircraftId);
     case 'atc':
-      return AtcTemplate(item);
+      return AtcTemplate(item, categoryName, aircraftId);
     default:
-      console.log(`Not Found: ${item.type}`);
+      // console.log(`Not Found: ${item.type}`);
       return '';
   }
   // // console.log(item);
@@ -155,12 +155,12 @@ export function displayChecklist(plane, parentElement) {
   checklistPecasHTML.push(resetAllButtonHTML);
 
   plane.checklists.forEach((element) => {
-    const categoryTitleHTML = categoryTitleTemplate(element.categoryName);
+    const categoryTitleHTML = categoryTitleTemplate(element.categoryName, plane.aircraftId);
     checklistPecasHTML.push(categoryTitleHTML);
 
     checklistPecasHTML.push('<div class="checklistDiv cards">');
     element.items.forEach((item) => {
-      const itemHTML = itemRender(item);
+      const itemHTML = itemRender(item, element.categoryName, plane.aircraftId);
       checklistPecasHTML.push(itemHTML);
     });
 
