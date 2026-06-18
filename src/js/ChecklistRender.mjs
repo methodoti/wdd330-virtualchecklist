@@ -155,7 +155,10 @@ export function displayChecklist(plane, parentElement) {
   checklistPecasHTML.push(resetAllButtonHTML);
 
   plane.checklists.forEach((element) => {
-    const categoryTitleHTML = categoryTitleTemplate(element.categoryName, plane.aircraftId);
+    const categoryTitleHTML = categoryTitleTemplate(
+      element.categoryName,
+      plane.aircraftId,
+    );
     checklistPecasHTML.push(categoryTitleHTML);
 
     checklistPecasHTML.push('<div class="checklistDiv cards">');

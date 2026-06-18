@@ -152,26 +152,34 @@ export function getParam(param) {
   // };
 }
 
-// LOCAL STORAGE 
-export let virtualChecklistState = JSON.parse(localStorage.getItem('virtualChecklistState')) || {};
+// LOCAL STORAGE
+export let virtualChecklistState =
+  JSON.parse(localStorage.getItem('virtualChecklistState')) || {};
 
 export function saveState() {
-    localStorage.setItem('virtualChecklistState', JSON.stringify(virtualChecklistState));
+  localStorage.setItem(
+    'virtualChecklistState',
+    JSON.stringify(virtualChecklistState),
+  );
 }
 
 // LOCAL STORAGE - LAST FLIGHT
 export function registerLastFlight(plane) {
   console.log(plane);
-    const currentDate = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-    const lastFlight = {
-        id: plane.aircraftId,
-        name: plane.aircraftName,
-        date: currentDate
-    };
-    localStorage.setItem("lastFlight", JSON.stringify(lastFlight));
+  const currentDate = new Date().toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  });
+  const lastFlight = {
+    id: plane.aircraftId,
+    name: plane.aircraftName,
+    date: currentDate,
+  };
+  localStorage.setItem('lastFlight', JSON.stringify(lastFlight));
 }
 
 // LOCAL STORAGE - LAST FLIGHT
 export function getLastFlight() {
-  return JSON.parse(localStorage.getItem("lastFlight")) || null;
+  return JSON.parse(localStorage.getItem('lastFlight')) || null;
 }

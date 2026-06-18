@@ -56,27 +56,12 @@ function displayLastFlight() {
     document.querySelector('#last-aircraft').textContent = 'No flight!';
     document.querySelector('#last-date').textContent = '';
     return;
-  } // good practice!
-  // if (!lastFlightDiv) {
-  //     // registerLastFlight();
-  // }
-  //    // return; // good practice!
+  }
 
   const htmlStrings = lastFlightTemplate(lastFlightData);
   // Passes the callback function setMenuCurrent (without parenteses for not running it now)
   renderWithTemplate(htmlStrings, lastFlightDiv);
 }
-
-// função temporaria! só para poder testar o template e a página
-// function registerLastFlight() {
-//             const currentDate = new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-//             const lastFlight = {
-//                 id: "b737-800",
-//                 name: "Boeing 737-800",
-//                 date: currentDate
-//             };
-//             localStorage.setItem("lastFlight", JSON.stringify(lastFlight));
-//         }
 
 // ==========================================
 // INITIALIZERS
