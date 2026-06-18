@@ -1,7 +1,7 @@
 import getChecklistData from './AircraftData.mjs';
-import { initSimBrief } from './SimBriefData.mjs';
-import { initWeather } from './WeatherData.mjs';
-import { initCheckList } from './ChecklistRender.mjs';
+// import { initSimBrief } from './SimBriefData.mjs';
+// import { initWeather } from './WeatherData.mjs';
+// import { initCheckList } from './ChecklistRender.mjs';
 import {
   renderListWithTemplate,
   renderWithTemplate,
@@ -80,9 +80,9 @@ async function init() {
   displayLastFlight();
 
   //init dummy functions
-  initSimBrief();
-  initWeather();
-  initCheckList();
+  // initSimBrief();
+  // initWeather();
+  // initCheckList();
 }
 
 // ==========================================

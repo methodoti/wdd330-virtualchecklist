@@ -630,6 +630,138 @@ footer {
       margin-top: 10px;
     }
   }
+
+  /* =========================================
+   Static Main Top Bar Layout
+   ========================================= */
+  .main-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    background-color: var(--c-jet-black);
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--c-slate-black);
+    width: 100%;
+  }
+
+  .flight-progress-text {
+    font-family: 'Kode Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--c-platinum);
+  }
+
+  .top-bar-icons {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .top-bar-icons > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+  }
+
+  .top-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  .top-bar-btn {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  /* =========================================
+   Top API Bar Layout (Mobile First)
+   ========================================= */
+  .top-api-bar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    background-color: var(--c-jet-black);
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--c-slate-black);
+    width: 100%;
+  }
+
+  .top-api-bar.show {
+    display: flex;
+  }
+
+  .api-bar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  .api-bar-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+
+  .api-config-panel {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+
+  .api-config-panel input {
+    height: 28px;
+    background-color: var(--c-slate-black);
+    border: 1px solid var(--primary-color);
+    color: var(--c-platinum);
+    padding: 0 8px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    width: 110px;
+  }
+
+  .api-save-btn {
+    height: 28px;
+    background-color: var(--primary-color);
+    color: var(--c-absolute-black);
+    border: none;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .api-save-btn:hover {
+    background-color: var(--c-amber-flame);
+  }
+
+  .flight-status-display {
+    font-family: 'Kode Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--c-platinum);
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
 }
 
 /*=========================================

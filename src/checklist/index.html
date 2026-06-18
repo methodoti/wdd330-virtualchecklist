@@ -32,6 +32,69 @@
   <body>
     <header id="main-header"></header>
     <main class="checklist-page">
+      <div class="main-top-bar">
+        <div class="flight-progress-text">
+          <span id="flight-progress-display">Flight Progress: 0%</span>
+        </div>
+
+        <div class="top-bar-icons">
+          <button
+            id="toggle-settings-btn"
+            class="top-bar-btn"
+            aria-label="Settings"
+          >
+            <img src="/images/icons/gear.svg" class="top-icon" alt="Settings" />
+          </button>
+          <button id="toggle-top-btn" class="top-bar-btn" aria-label="Go Top">
+            <img src="/images/icons/to-top.svg" class="top-icon" alt="Go Top" />
+          </button>
+          <button
+            id="toggle-expand-btn"
+            class="top-bar-btn"
+            aria-label="Expand All"
+          >
+            <img
+              src="/images/icons/double-down.svg"
+              class="top-icon"
+              alt="Expand All"
+            />
+          </button>
+          <button
+            id="toggle-colapse-btn"
+            class="top-bar-btn"
+            aria-label="Colapse All"
+          >
+            <img
+              src="/images/icons/double-up.svg"
+              class="top-icon"
+              alt="Colapse All"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="top-api-bar">
+        <button
+          id="simbrief-btn"
+          class="api-bar-btn"
+          aria-label="Configure SimBrief"
+        ></button>
+
+        <div id="simbrief-config-panel" class="api-config-panel">
+          <input
+            type="text"
+            id="simbrief-id-input"
+            placeholder="Simbrief Pilot ID"
+            aria-label="Simbrief Pilot ID"
+          />
+          <button id="save-simbrief-btn" class="api-save-btn">Load Plan</button>
+        </div>
+
+        <div class="flight-status-display">
+          <span id="top-flight-info">No Flight Plan</span>
+        </div>
+      </div>
+
       <h1>Checklist</h1>
       <label
         >Select aircarft

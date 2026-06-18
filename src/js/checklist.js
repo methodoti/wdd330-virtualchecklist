@@ -1,5 +1,6 @@
 import getChecklistData from './AircraftData.mjs';
 import { displayChecklist } from './ChecklistRender.mjs';
+import { fetchSimBriefData } from './SimBriefData.mjs';
 import {
   loadHeaderFooter,
   virtualChecklistState,
@@ -10,6 +11,134 @@ import {
 
 // load header and footer
 loadHeaderFooter();
+
+// =========================================
+// SIMBRIEF ID - LOCAL STORAGE
+// =========================================
+const simbriefInput = document.getElementById('simbrief-id-input');
+const saveSimbriefBtn = document.getElementById('save-simbrief-btn');
+const topFlightInfo = document.getElementById('top-flight-info');
+
+// ================================================================================
+// FLIGHT PLAN CENTRAL
+// ================================================================================
+
+// save the locaoStorage object
+function saveFlightState(state) {
+  localStorage.setItem('simbrief_plan', JSON.stringify(state));
+}
+
+// recover the localStorage object
+function getFlightState() {
+  const state = localStorage.getItem('simbrief_plan');
+  return state ? JSON.parse(state) : null;
+}
+
+// update interface based on the state variables
+function updateFlightUI(origin, destination) {
+  if (origin && destination) {
+    topFlightInfo.textContent = `Flight: ${origin} ➔ ${destination}`;
+  } else {
+    topFlightInfo.textContent = 'No Flight Plan';
+  }
+}
+
+// call API, extract variables and save the state
+async function handleLoadFlightPlan(pilotId) {
+  if (!pilotId) return;
+
+  const data = await fetchSimBriefData(pilotId);
+
+  if (data && data.origin && data.destination) {
+    // ----------------------------------------------------------------------
+    // API Extracted Variables ( new JSON data here)
+    // ----------------------------------------------------------------------
+    const newFlightState = {
+      pilotId: pilotId,
+      origin: data.origin.icao_code,
+      destination: data.destination.icao_code,
+      // Next steps: payload, weather, etc.
+    };
+    // ----------------------------------------------------------------------
+
+    // SAVE AND UPDATE
+    saveFlightState(newFlightState);
+    updateFlightUI(newFlightState.origin, newFlightState.destination);
+    return true;
+  }
+  return false;
+}
+
+// ================================================================================
+// TRIGGERS AND EVENTS
+// ================================================================================
+
+const currentFlight = getFlightState();
+if (currentFlight) {
+  simbriefInput.value = currentFlight.pilotId || '';
+  updateFlightUI(currentFlight.origin, currentFlight.destination);
+}
+
+// Simbrief Bar visibiliti togle
+const toggleSettingsBtn = document.getElementById('toggle-settings-btn');
+const topApiBar = document.querySelector('.top-api-bar');
+
+toggleSettingsBtn.addEventListener('click', () => {
+  topApiBar.classList.toggle('show');
+});
+
+// 'Load Plan'  = Main simbrief trigger
+saveSimbriefBtn.addEventListener('click', async () => {
+  const pilotId = simbriefInput.value.trim();
+
+  if (pilotId) {
+    saveSimbriefBtn.textContent = 'Loading...';
+    saveSimbriefBtn.disabled = true;
+
+    const success = await handleLoadFlightPlan(pilotId);
+
+    saveSimbriefBtn.disabled = false;
+
+    if (success) {
+      saveSimbriefBtn.textContent = 'Loaded';
+      saveSimbriefBtn.style.backgroundColor = 'var(--c-laser-green)';
+    } else {
+      saveSimbriefBtn.textContent = 'Error';
+      saveSimbriefBtn.style.backgroundColor = 'var(--c-amber-flame)';
+    }
+
+    setTimeout(() => {
+      saveSimbriefBtn.textContent = 'Load Plan';
+      saveSimbriefBtn.style.backgroundColor = 'var(--primary-color)';
+    }, 2000);
+  }
+});
+
+// =========================================
+// TOP BAR CONTROLS (Top, Expand, Collapse)
+// =========================================
+const btnTop = document.getElementById('toggle-top-btn');
+const btnExpand = document.getElementById('toggle-expand-btn');
+const btnCollapse = document.getElementById('toggle-colapse-btn');
+
+// Go top
+btnTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Expand all categories
+btnExpand.addEventListener('click', () => {
+  document.querySelectorAll('.checklistDiv').forEach((categoria) => {
+    categoria.classList.add('show');
+  });
+});
+
+// 3. Colapse All
+btnCollapse.addEventListener('click', () => {
+  document.querySelectorAll('.checklistDiv').forEach((categoria) => {
+    categoria.classList.remove('show');
+  });
+});
 
 // ==========================================
 // TEMPLATES & RENDER

@@ -1,8 +1,8 @@
 import { renderWithTemplate, renderListWithTemplate } from './utils.mjs';
 
-export function initCheckList() {
-  console.log('Checklist Module Loaded');
-}
+// export function initCheckList() {
+//   console.log('Checklist Module Loaded');
+// }
 
 // ==========================================
 // TEMPLATES
