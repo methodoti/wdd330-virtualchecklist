@@ -1,6 +1,7 @@
 import getChecklistData from './AircraftData.mjs';
 import { displayChecklist } from './ChecklistRender.mjs';
 import { fetchSimBriefData } from './SimBriefData.mjs';
+import { fetchWeatherData } from './WeatherData.mjs';
 import {
   loadHeaderFooter,
   virtualChecklistState,
@@ -17,77 +18,115 @@ loadHeaderFooter();
 // =========================================
 const simbriefInput = document.getElementById('simbrief-id-input');
 const saveSimbriefBtn = document.getElementById('save-simbrief-btn');
-const topFlightInfo = document.getElementById('top-flight-info');
+// const topFlightInfo = document.getElementById('top-flight-info');
 
 // ================================================================================
 // FLIGHT PLAN CENTRAL
 // ================================================================================
 
-// save the locaoStorage object
 function saveFlightState(state) {
   localStorage.setItem('simbrief_plan', JSON.stringify(state));
 }
 
-// recover the localStorage object
 function getFlightState() {
   const state = localStorage.getItem('simbrief_plan');
   return state ? JSON.parse(state) : null;
 }
 
 // update interface based on the state variables
-function updateFlightUI(origin, destination) {
-  if (origin && destination) {
-    topFlightInfo.textContent = `Flight: ${origin} ➔ ${destination}`;
+function updateFlightUI(state) {
+  const topFlightInfo = document.getElementById('top-flight-info');
+  const bottomBarSummary = document.getElementById('bottom-bar-summary');
+  const bottomFlightDetails = document.getElementById('bottom-flight-details');
+
+  if (state && state.origin && state.destination) {
+    topFlightInfo.textContent = `Flight: ${state.origin} ➔ ${state.destination}`;
+    bottomBarSummary.textContent = `${state.aircraft} | ${state.origin} ➔ ${state.destination} | WX: Loaded`;
+
+    const detailsString = `SUMMARY:
+Route: ${state.origin} ➔ ${state.destination}
+Flight Level: ${state.flightLevel}
+Cost Index: ${state.costIndex}
+
+PAYLOAD:
+Passengers (PAX): ${state.pax}
+Cargo / Baggage: ${state.cargo}
+Zero Fuel Weight (ZFW): ${state.zfw}
+Block Fuel: ${state.blockFuel}
+Take-off Weight (TOW): ${state.tow}
+
+WEATHER (METAR):
+DEP (${state.origin}): ${state.metarOrigin}
+ARR (${state.destination}): ${state.metarDest}`;
+
+    bottomFlightDetails.textContent = detailsString;
   } else {
     topFlightInfo.textContent = 'No Flight Plan';
+    bottomBarSummary.textContent = 'No Flight Plan';
+    bottomFlightDetails.textContent = '';
   }
 }
 
-// call API, extract variables and save the state
+// Update weather
 async function handleLoadFlightPlan(pilotId) {
   if (!pilotId) return;
 
   const data = await fetchSimBriefData(pilotId);
 
   if (data && data.origin && data.destination) {
-    // ----------------------------------------------------------------------
-    // API Extracted Variables ( new JSON data here)
-    // ----------------------------------------------------------------------
+    const icaoCodes = `${data.origin.icao_code},${data.destination.icao_code}`;
+    const weatherData = await fetchWeatherData(icaoCodes);
+
+    let metarOrg = 'N/A';
+    let metarDst = 'N/A';
+
+    if (weatherData && weatherData.length > 0) {
+      const orgData = weatherData.find(
+        (w) => w.icaoId === data.origin.icao_code,
+      );
+      const dstData = weatherData.find(
+        (w) => w.icaoId === data.destination.icao_code,
+      );
+
+      if (orgData) metarOrg = orgData.rawOb;
+      if (dstData) metarDst = dstData.rawOb;
+    }
+
     const newFlightState = {
       pilotId: pilotId,
+      aircraft: data.aircraft.icaocode || 'A/C',
       origin: data.origin.icao_code,
       destination: data.destination.icao_code,
-      // Next steps: payload, weather, etc.
+      flightLevel: data.general.initial_altitude || 'N/A',
+      costIndex: data.general.costindex || 'N/A',
+      pax: data.weights.pax_count || '0',
+      cargo: data.weights.cargo || '0',
+      zfw: data.weights.est_zfw || '0',
+      blockFuel: data.weights.est_fuel || '0',
+      tow: data.weights.est_tow || '0',
+      metarOrigin: metarOrg,
+      metarDest: metarDst,
     };
-    // ----------------------------------------------------------------------
 
-    // SAVE AND UPDATE
     saveFlightState(newFlightState);
-    updateFlightUI(newFlightState.origin, newFlightState.destination);
+    updateFlightUI(newFlightState);
     return true;
   }
   return false;
 }
 
-// ================================================================================
+// =========================================
 // TRIGGERS AND EVENTS
-// ================================================================================
+// =========================================
 
+// 1. Initializer
 const currentFlight = getFlightState();
 if (currentFlight) {
   simbriefInput.value = currentFlight.pilotId || '';
-  updateFlightUI(currentFlight.origin, currentFlight.destination);
+  updateFlightUI(currentFlight); // Passing the entire state object now
 }
 
-// Simbrief Bar visibiliti togle
-const toggleSettingsBtn = document.getElementById('toggle-settings-btn');
-const topApiBar = document.querySelector('.top-api-bar');
-
-toggleSettingsBtn.addEventListener('click', () => {
-  topApiBar.classList.toggle('show');
-});
-
-// 'Load Plan'  = Main simbrief trigger
+// 2. Load Plan Button Click
 saveSimbriefBtn.addEventListener('click', async () => {
   const pilotId = simbriefInput.value.trim();
 
@@ -113,6 +152,30 @@ saveSimbriefBtn.addEventListener('click', async () => {
     }, 2000);
   }
 });
+
+// =========================================
+// TOGGLE BARS (TOP AND BOTTOM)
+// =========================================
+
+// Top Bar (Simbrief Config)
+const toggleSettingsBtn = document.getElementById('toggle-settings-btn');
+const topApiBar = document.querySelector('.top-api-bar');
+
+if (toggleSettingsBtn && topApiBar) {
+  toggleSettingsBtn.addEventListener('click', () => {
+    topApiBar.classList.toggle('show');
+  });
+}
+
+// Bottom Bar (Flight Details)
+const toggleBottomBar = document.getElementById('toggle-bottom-bar');
+const bottomApiBar = document.querySelector('.bottom-api-bar');
+
+if (toggleBottomBar && bottomApiBar) {
+  toggleBottomBar.addEventListener('click', () => {
+    bottomApiBar.classList.toggle('show');
+  });
+}
 
 // =========================================
 // TOP BAR CONTROLS (Top, Expand, Collapse)
