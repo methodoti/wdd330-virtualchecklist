@@ -762,6 +762,63 @@ footer {
     padding-left: 10px;
     text-transform: uppercase;
   }
+
+  /* =========================================
+   Bottom API Bar Layout
+   ========================================= */
+  .bottom-api-bar {
+    background-color: var(--c-jet-black);
+    border-top: 1px solid var(--c-slate-black);
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .bottom-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    padding: 0 20px;
+    cursor: pointer;
+    background-color: var(--c-jet-black);
+    border-top: 1px solid var(--c-slate-black);
+    /* background-color: var(--c-slate-black); */
+    position: relative;
+  }
+
+  #bottom-bar-summary {
+    font-family: 'Kode Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--c-platinum);
+    text-transform: uppercase;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+
+  .bottom-bar-content {
+    display: none;
+    padding: 15px 20px;
+    background-color: var(--c-jet-black);
+  }
+
+  .bottom-api-bar.show .bottom-bar-content {
+    display: block;
+  }
+
+  .bottom-api-bar.show .bottom-bar-header .categoryButton {
+    transform: rotate(180deg);
+  }
+
+  .flight-details-text {
+    color: var(--c-platinum);
+    font-family: 'Kode Mono', monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
 }
 
 /*=========================================
